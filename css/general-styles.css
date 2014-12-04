@@ -1,0 +1,820 @@
+@charset "utf-a8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../lib/Gotham-Book.ttf), url(../lib/Gotham-Book.otf);
+}
+@font-face {
+  font-family: 'Gotham Light';
+  src: url(../lib/Gotham-Light.otf);
+}
+
+.qa{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;subcat
+	opacity:0.5;
+}
+
+/* foundation adjustments */
+
+@media only screen and (min-width: 1280px) {
+	.row .row{
+		margin-left: -0.9375em
+	}
+}
+@media (min-width: 1024px) {
+	.columns, .column {
+		padding-left: 0px;
+		padding-right: 1.875em;
+}
+	.row .row {
+		margin-left: 0px;
+	}
+}
+
+/* General tags */
+
+body,html{
+	overflow-x: hidden;
+	max-width:100%;
+	margin:0;
+	font-size: 16px;
+}
+span,p,h1,h2,h3,h5,li,a{
+	font-family: "Gotham Light", Verdana, Geneva, sans-serif;
+}
+h2, h3, h4 {
+	font-weight: normal;
+}
+h5{
+	color:#FFF;
+	text-transform:uppercase;
+	text-align:center;
+	margin:0.7em;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* logo */
+
+#AbramsLogo img{
+	height: 59px;
+	float: right;
+	cursor:pointer;
+}
+#AbramsLogoMenu{
+	width: 100%;
+	display:none;
+}
+#AbramsLogoMenu img{
+	width: 100%;
+}
+
+/* menu styles starts here */
+
+#menu{
+	height:61px;
+	position: fixed;
+	width: 100%;
+	z-index:4;
+}
+#topBar{
+	background-color:#E31C23;
+	width:100%;
+	height:60px;
+	border-bottom: #A73445 1px solid;
+}
+/* helper to align images to middle vertically */
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#hamburgerMenu{
+	float:left;
+	height:100%;
+	cursor:pointer;
+}
+#hamburgerMenu img{
+	margin-left:20px;
+	vertical-align:middle;
+}
+#baseMenu{
+	position:fixed;
+
+	height:auto;
+	text-align:center;
+	top:60px;
+	left:-160px;
+	width: 160px;
+	overflow:auto;
+	z-index:4;
+}
+#baseMenu ul{
+	list-style-type:none;
+	margin-top:66px;
+	padding:0px;
+}
+.baseMenuItem{
+	cursor:pointer;
+	padding:0px 30px;
+	text-transform:uppercase;
+	margin-top:15px;
+	background-color:#FFF;
+}
+#bookMenuItem{
+	color:#fd6c35;
+	font-size:24px;
+	line-height:34px;
+}
+#kidsMenuItem{
+	color:#ffb717;
+	font-size:40px;
+	line-height:50px;
+}
+#giftMenuItem{
+	color:#b5be01;
+	font-size:13px;
+	line-height:26px;
+}
+#imprMenuItem{
+	color:#009d4e;
+	font-size:19px;
+}
+#authMenuItem{
+	color:#26cad3;
+	font-size:18px;
+}
+#connMenuItem{
+	font-size:18px;
+	color:#0082cd;
+}
+#blogMenuItem{
+	color:#b34ec6;
+	font-size:26px;
+}
+#evenMenuItem{
+	color:#f477c5;
+	font-size:23px;
+}
+#resoMenuItem{
+	color:#ec6851;
+	font-size:15px;
+	line-height:30px;
+}
+#cataMenuItem{
+	color:#b08401;
+	font-size:16.5px;
+	line-height:30px;
+}
+#compMenuItem{
+	color:#afa198;
+	font-size:17.5px;
+	line-height:30px;
+}
+.search{
+	padding-bottom:40px;
+}
+
+#subMenu{
+	position:fixed;
+	height:100%;
+	top:60px;
+	left:-280px;
+	width: 0px;
+	overflow:auto;
+	z-index:4;
+}
+#subMenu ul{
+	margin:0;
+}
+.subCategory{
+	min-height:100%;
+	height:auto;
+	padding-top:25px;
+	padding-bottom:100px;
+}
+.subCategory ul{
+	padding-top: 25px;
+}
+
+.subCategory li{
+	list-style-type:none;
+	color:white;
+	text-transform:uppercase;
+}
+.menuBook{
+	text-align:center;
+	padding-top:30px;
+}
+.subCategory hr{
+	width: 71%;
+	border: none;
+	height: 1px;
+	background: white;
+	margin-top:25px;
+}
+/* Menu styles end here */
+
+
+
+
+/**********/
+/* SLIDER */
+/**********/
+
+
+#slider{
+	padding:0;
+}
+#slider .controls{
+margin: -85px auto 15px;
+text-align: center;
+}
+#slider .item{
+width: auto;
+ height: auto;
+}
+
+#slider {
+	background:#f4f4f4;
+	position: relative; 
+}
+#slider.full {
+	margin: 0px 5px 5px 0px; 
+	float: left; 
+	top: 0px; 
+	left: 0px;  
+	overflow: hidden;
+}
+@media (max-width:639px) {
+	#slider {
+	padding-top:42px;
+	padding-bottom:17px
+	}
+}
+@media (min-width:640px) {
+	#slider {
+	padding-top:42px;
+	padding-bottom:17px
+	}
+}
+@media (min-width:960px) {
+	#slider {
+	padding-top:28px;
+	padding-bottom:22px
+	}
+}
+@media (min-width:1280px) {
+	#slider {
+	padding-top:27px;
+	padding-bottom:24px
+	}
+}
+@media (min-width:1920px) {
+	#slider {
+	padding-top:55px;
+	padding-bottom:50px
+	}
+}
+
+.slides {
+	cursor: move; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	overflow: hidden;
+}
+#slider .item {
+	margin:0 auto
+}
+
+#slider img{
+	width:100%;
+}
+#slider .item img {
+	width:100%
+}
+
+#slider .darkCaption {
+	color:#333 !important;
+}
+.sliderLogo{
+	width: 53% !important;
+	margin: 0 auto;
+	display: block;
+	margin-top: 250px;
+	vertical-align: middle;
+}
+@media (max-width:639px) {
+	#slider .item {
+	width:80%
+	}
+}
+@media (min-width:640px) {
+	#slider .item {
+	width:390px;
+	height:477px
+	}
+}
+@media (min-width:960px) {
+	#slider .item {
+	width:305px;
+	height:373px
+	}
+}
+@media (min-width:768px) {
+	#slider .item {
+	width:388px;
+	height:475px
+	}
+}
+@media (min-width:1024px) {
+	#slider .item {
+	width:388px;
+	height:475px
+	}
+}
+@media (min-width:1280px) {
+	#slider .item {
+	width:509px;
+	height:622px
+	}
+}
+@media (min-width:1920px) {
+	#slider .item {
+	width:675px;
+	height:826px
+	}
+}
+/* Slider Arrows */
+.jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
+    {
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        background: url(../images/a03b.png) no-repeat;
+        overflow:hidden;
+    }
+.jssora03l { background-position: -3px ; }
+.jssora03r { background-position: -63px; }
+.jssora03l:hover { background-position: -123px ; }
+.jssora03r:hover { background-position: -183px ; }
+.jssora03ldn { background-position: -243px ; }
+.jssora03rdn { background-position: -303px ; }
+
+#slider .arrowLeft {
+	width: 55px; height: 90px; top: 280px; left: 8px;
+}
+#slider .arrowRight {
+	width: 55px; height: 90px; top: 280px; right: 8px
+}
+/* Slider navigator */
+
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+	/*background: url(../images/b05.png) no-repeat;*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	font-size:0;
+	margin:5px;
+	overflow: hidden;
+	cursor: pointer;
+	}
+
+.jssorb05 div {
+    background-color: #FFF;
+}
+
+    .jssorb05 div:hover, .jssorb05 .av:hover {
+        background-color: #FFF;
+    }
+
+.jssorb05 .av {
+    background-color: #959595;
+}
+
+.jssorb05 .dn, .jssorb05 .dn:hover {
+    background-color: #000;
+}
+
+.navigator {
+	position: absolute; 
+	bottom: 16px; 
+	right: 6px;
+}
+@media (min-width:1025px) {
+	#slider .navigator {
+		right: 120px !important
+		bottom: -60px !important;
+		}
+	}
+#prototype {
+	position: absolute; width: 16px; height: 16px;
+}
+
+#slider .controls {
+	margin:25px auto 15px;
+	text-align:center;
+}
+@media (min-width:1025px) {
+	#slider .controls {
+	margin:-30px 120px auto auto;
+	text-align:right
+	}
+}
+@media (min-width:1920px) {
+	#slider .controls {
+	margin:-30px 50px auto auto
+	}
+}
+#slider.full .controls {
+	position: absolute; 
+	bottom: 4px; 
+	left: 6px;
+}
+#slider .controls div {
+	border-radius:10px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	font-size:0;
+	margin:5px;
+}
+@media (min-width:1280px) {
+#AbramsLogoMenu{
+	display:block;
+}
+#slider .controls div {
+	width:10px;
+	height:10px;
+	border-radius:5px
+	}
+}
+#slider .controls .itemActive {
+	background-color:#959595
+}
+#slider .controls .itemUnactive {
+	background-color:#fff
+}
+#slider .caption {
+	text-align:center;
+	font-family:'Gotham Light';
+	color:#9b9b9b;
+}
+@media (min-width:1025px) {
+#slider .caption {
+	text-align:right;
+	padding-right:120px;
+	color:#fff;
+	margin-top:10px
+	}
+}
+@media (min-width:1920px) {
+	#slider .caption {
+	text-align:right;
+	padding-right:50px;
+	color:#fff;
+	margin-top:10px
+	}
+}
+#slider.full .caption {
+	position:  absolute;
+	bottom: 20px;
+	font-size: 24px;
+	padding-right: 0px;
+	color:#FFF;
+	left:0;
+	right:0;
+	margin: auto;
+}
+@media (min-width:1025px) {
+#slider.full .caption {
+	right:20px
+	}
+}
+@media (min-width:1920px) {
+	#slider.full .caption {
+	right:20px;
+	}
+}
+
+/* content */
+
+#content{
+	position: absolute;
+	left: 0px;
+	right:0px;
+	top: 60px;
+	width:100%
+}
+
+/* What are these styles for? */
+.grid {
+	margin-left: 1.5%;
+	position:relative;
+	margin-top:20px;
+	overflow:hidden;
+	height:237px;
+	cursor:pointer;
+}
+.gridLeft{
+	float:left;
+}
+.gridRight{
+float: right;
+margin-right: 1.5%;
+}
+.two{
+	width: 57%;
+}.one{
+	width: 38%;
+}
+.three{
+	width: 97%;
+}
+/* Belong to home.css
+.textLeft{
+	width: auto;
+	overflow:hidden;
+	color:white;
+	padding:10px;
+}
+.imageRight{
+	height:237px;
+	float:right;
+}
+.imageLeft{
+	height:237px;
+	float:left;
+}
+.imageLeft img,.imageRight img{
+	height:237px;
+}
+.onHover{
+	display:none;
+}
+.seller{
+	text-align:center;
+}
+.seller img{	
+	height: 180px;
+	display: inline-block;
+}*/
+.grid h3{
+	margin: 0px;
+	text-transform: uppercase;
+	font-size: 0.80em;
+}
+.grid h2{
+	margin: 0px;
+	font-size: 1.5em;
+}
+
+
+
+/* Common clases */
+
+.lightblue{
+	background-color:#26cad3;
+}
+.brown{
+	background-color:#b08401;
+}
+.kidsColor, .orange{
+	background-color:#ffb717;
+}
+.pink{
+	background-color:#f477c5;
+}
+
+.pink2{
+	background-color:#f7a38b;
+}
+.olive{
+	background-color:#b5be01;
+}
+.purple{
+	background-color:#b34ec6;
+}
+.green{
+	background-color:#009d4e;
+}
+.bookColor, .darkorange{
+	background-color:#fd6c35;
+}
+.lightgray{
+	background-color:#f4f4f4;
+}
+.blue{
+	background-color:#0082cd;
+}
+.gray{
+	background-color: #afa198;
+}
+.papaya{
+	background-color:#ec6851;
+}
+.darkbeige { /* Neutral color used also as main text color in the site */
+	background-color: #afa198;
+}
+
+#categoriesBlock{
+	font-size:0px;
+	margin-left:10px;
+}
+#categoriesBlock a{
+	color:white;
+	cursor:pointer;
+	padding:7px 20px 7px 20px; 
+	margin:10px 10px 0px 0px; 
+	white-space:nowrap;
+	font-size:1.25rem;
+	display:inline-block;
+	text-decoration:none;
+}
+@media (min-width: 768px) {
+	#categoriesBlock a{
+		font-size: 1.4rem
+	}
+}
+@media (min-width: 1024px) {
+	#categoriesBlock a{
+		font-size: 1.9rem
+	}
+	}
+.no-padding {
+	padding: 0px !important;
+}
+.ir { /* image replacement */
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+.prettyCovers{
+	border: solid 1px #a2a2a2;
+	-webkit-box-shadow: 0 0 18px 0 rgba(0,0,0,0.4);
+	box-shadow: 0 0 18px 0 rgba(0,0,0,0.4);
+	/* falta la sombra interna */
+}
+
+
+
+/* Vertical align */
+
+
+.vaWrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.5em; /* Adjusts for spacing */
+}
+.vaElement {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Pagination */
+
+#paginationWrapper {
+	font-family: "Gotham Light";
+	margin-top: 22px;
+	padding-top: 0px;
+}
+
+ul.pagination {
+  display: block;
+  min-height: 1.5em;
+  margin: 0;
+  padding: 0; }
+  ul.pagination li {
+    height: 1.3em;
+    color: #FFF;
+    font-size: 1.5em; }
+
+@media (min-width: 320px) and (max-width: 639px) {
+	ul.pagination li {
+    font-size: 1.1em; }
+}
+
+    ul.pagination li a {
+      display: block;
+      padding: 5px
+      color: #FFF;
+      font-weight: normal;
+      line-height: inherit;
+      margin: 5px 1em 5px 0
+  }
+ @media (min-width: 320px) and (max-width: 639px) {
+ 	ul.pagination li a {
+      margin: 5px 0.6em 5px 0
+ 	}
+ }
+    ul.pagination li:hover a,
+    ul.pagination li a:focus {
+       }
+    ul.pagination li.unavailable a{
+      cursor: default;
+      color: #FFF; }
+    ul.pagination li.current a {
+      color: white;
+      font-weight: bold;
+      cursor: default; }
+    ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+        ; }
+  ul.pagination li {
+    float: left;
+    display: block; }
+
+
+/* Footer */
+
+
+footer {
+	font-size: 0.875em;	
+	padding: 1.215em;
+	color: #4b4b4d;
+	font-family: "Gotham-Light"
+}
+footer ul {
+	margin:8px 0;
+	padding: 0
+}
+footer ul li {
+	display: inline-block;
+}
+footer a {
+	
+	border-right: solid 1px #4b4b4d;
+	padding: 0 5px; 
+	margin: 5px 0 
+}
+footer a.last {
+	border: none;
+}
+/* unneeded styles
+#footer{
+	color:#666;
+	margin-left:1.5%;
+	margin-right:1.5%;
+}
+
+#footer span,#footer p{	
+    line-height: 28px;
+    font-size: 15px;
+}
+#footer span a,#footer p a{	
+	color:#666;
+	text-decoration:none;
+}
+#footer a{
+	white-space:nowrap;
+}*/
+
+
+/* Media queries adjustments */
+
+@media only screen and (min-width: 64.063em) {
+	#menu{
+		display:none;
+	}
+	#baseMenu,#subMenu,#content{
+		top:0;
+	}
+	#baseMenu{
+		left:0;
+	}
+	#subMenu{
+		left:160px;
+	}
+	#content{
+		left:160px;
+		width:auto;
+	}
+	#AbramsLogoMenu{
+		display:block;
+	}
+	.baseMenuItem{
+		margin-top:0px;
+	}
+}
+@media only screen and (min-width: 80em) { 
+	footer ul {
+		display: inline-block;
+	}
+	footer .nav .last {
+		border-right: solid 1px #4b4b4d;
+	}
+	footer span {
+		display: block;
+	}
+}
