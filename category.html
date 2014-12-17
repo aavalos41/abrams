@@ -7,7 +7,7 @@
         <link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/foundation.css" rel="stylesheet" type="text/css" />
         <link href="css/general-styles.css" rel="stylesheet" type="text/css" />
-        <link href="css/home.css" rel="stylesheet" type="text/css" />
+        <link href="css/results-template.css" rel="stylesheet" type="text/css" />
         <link href="css/category.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery.nicescroll.js"></script>
@@ -309,6 +309,7 @@
         <!-- SIDEBAR END -->
         <!-- CONTENT START -->
         <div id="content">
+            <h1 class="overSlider">Fashion</h1>
          <!-- Jssor Slider Begin -->
 	        <div id="slider" class="full" style="height: 900px; 
 	    width: 1920px;">
@@ -332,23 +333,33 @@
 			<div class="row">
 				<!-- START RESULTS -->
 				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end" id="results">
-                    <div class="row"  data-equalizer>
-                        <!--The following box will be shown only in mobile (up to 320px) -->
-                        <div class="small-6 medium-4 columns sort show-for-xsmall-only" >
+                    <!--The following row will be shown only in mobile (up to 320px) -->
+                    <div class="row show-for-xsmall-only"  data-equalizer>
+                        
+                        <div class="small-6 medium-4 columns sort" >
                             <div class="pink vaWrapper">
                                 <a href="#" class="sort vaElement"> 
                                     <b>sort</b><span> newest first</span>
                                 </a>
                             </div>
-                        </div> <!-- End of .show-for-xsmall-only -->
+                        </div> 
+                        <div class="small-6 medium-4 columns sort hide-for-xsmall-only"  data-equalizer-watch>
+                            <div class="pink vaWrapper">
+                                <a href="#" class="sort vaElement"> 
+                                    <b>sort</b><span> newest first</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End of .show-for-xsmall-only -->
+                    <div class="row"  data-equalizer>
                         <div class="small-6 medium-4 columns"  data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/category/fpo-cat-thumb-1.jpg" alt="" />
+                            <a href="#" class="book vaWrapper">
+                                <img src="images/category/fpo-cat-thumb-1.jpg" alt="" class="vaElement"/>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 hide-for-small-only columns"  data-equalizer-watch> <!--This box will be hidden only in mobile (from 321px to 640px) -->
-                            <a href="#" class="book">
-                                <img src="images/category/fpo-cat-thumb-2.jpg" alt="" />
+                        <div class="small-6 medium-4 show-for-960-up columns"  data-equalizer-watch> <!--This box will be hidden from 321px to 959px -->
+                            <a href="#" class="book vaWrapper">
+                                <img src="images/category/fpo-cat-thumb-2.jpg" alt="" class="vaElement"/>
                             </a>
                         </div>
                         <div class="small-6 medium-4 columns sort hide-for-xsmall-only"  data-equalizer-watch>
@@ -362,20 +373,20 @@
                     <div class="row">
                         <div class="small-12 medium-8 columns" >
                             <div class="pink featured"  >
-                                <a href="#" class="book">
+                                <a href="#" class="book vaWrapper">
                                     <img src="images/category/fpo-cat-feature-1.jpg" alt="" />Fashionable Selby <span class="author">By Todd Selby, foreword by Simon Doonan</span>
                                 </a>    
                             </div>
                         </div>
                         <div class="columns small-12 medium-4 no-padding"  data-equalizer>
                             <div class="small-6 medium-12 columns" data-equalizer-watch>
-                                <a href="#" class="book">
-                                    <img src="images/category/fpo-cat-thumb-3.jpg" alt="" />
+                                <a href="#" class="book vaWrapper">
+                                    <img src="images/category/fpo-cat-thumb-3.jpg" alt="" class="vaElement"/>
                                 </a>
                              </div>   
                              <div class="small-6 medium-12 columns" data-equalizer-watch>
-                                <a href="#" class="book">
-                                    <img src="images/category/fpo-cat-thumb-4.jpg" alt="" /></div>
+                                <a href="#" class="book vaWrapper">
+                                    <img src="images/category/fpo-cat-thumb-4.jpg" alt="" class="vaElement"/></div>
                                 </a>
                         </div>
                     </div><!-- end of .row -->
@@ -385,13 +396,13 @@
 
 					<ul class="small-block-grid-2 medium-block-grid-3">
                         
-                        <li><a href="#" class="book"><img src="images/category/fpo-cat-thumb-5.jpg" alt="" /></a></li>
+                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-5.jpg" alt="" class="vaElement"/></a></li>
                        
-                        <li><a href="#" class="book"><img src="images/category/fpo-cat-thumb-6.jpg" alt="" /></a></li>
-                        <li><a href="#" class="book"><img src="images/category/fpo-cat-thumb-7.jpg" alt="" /></a></li>
-                        <li><a href="#" class="book"><img src="images/category/fpo-cat-thumb-1.jpg" alt="" /></a></li>
-                        <li><a href="#" class="book"><img src="images/category/fpo-cat-thumb-2.jpg" alt="" /></a></li>
-                        <li><a href="#" class="book"><img src="images/category/fpo-cat-thumb-3.jpg" alt="" /></a></li>
+                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-6.jpg" alt="" class="vaElement"/></a></li>
+                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-7.jpg" alt="" class="vaElement"/></a></li>
+                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-1.jpg" alt="" class="vaElement"/></a></li>
+                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-2.jpg" alt="" class="vaElement"/></a></li>
+                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-3.jpg" alt="" class="vaElement"/></a></li>
                     </ul>
 
 				</div> <!-- END #RESULTS -->

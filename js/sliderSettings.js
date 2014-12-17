@@ -93,7 +93,7 @@ var options = {
             //you can remove responsive code if you don't want the slider scales while window resizes
             function ScaleSlider() {
 				var clientWidth=$(window).width();
-				if($(window).width()>1024)clientWidth=$(window).width()-180;
+				if($(window).width()>1280)clientWidth=1110;
 		
                 var bodyWidth = document.body.clientWidth;
 				console.log(document.body.clientWidth);

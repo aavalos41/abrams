@@ -33,7 +33,7 @@ $(document).ready(function() {
 	var selectedMenu="";
 	$('.baseMenuItem').click(function(){
 			if(selectedMenu!="")invertColor(selectedMenu+"MenuItem");
-			console.log($('#slider').length);
+			console.log("width "+ $('#content').width());
 		if(selectedMenu==$(this).closest('li').attr('id').substr(0,4)){
 			//close submenu
 			$('#subMenu').stop(true, true).animate({'width' : "0px" });
@@ -41,7 +41,6 @@ $(document).ready(function() {
 			selectedMenu="";
 		}else{
 			selectedMenu=$(this).closest('li').attr('id').substring(0,4);
-			console.log(selectedMenu+'SubMenu');
 			//pause slider (if not paused before for mobile)
 			//reveal the submenu for the selected menu item
 			$('#subMenu div').stop(true, true).hide();
@@ -91,8 +90,6 @@ $(document).ready(function() {
 			 var backC=$('#'+id).css("background-color");
 			 $('#'+id).css("color",backC);
 			 $('#'+id).css("background-color",fontC);
-			 console.log("font "+fontC);
-			 console.log("back "+backC);
 		 }
 	
 });

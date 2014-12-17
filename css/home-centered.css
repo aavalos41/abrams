@@ -19,10 +19,10 @@ left: calc(50% - 640px);
 left: calc(50% - 640px + 160px);
 }
 }
-}
 
-#slider.full {
-	margin: 0px;
+#content{
+left: -webkit-calc(50% - 470px);
+left: calc(50% - 470px);
 }
 
 #newReleases{

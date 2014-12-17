@@ -16,6 +16,9 @@
 		<script type="text/javascript" src="js/sliderSettings.js"></script>
 	</head>
     <body>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.equalizer.js"></script>
+    	<div class="pageWrapper">
         <!-- HEADER END -->
         <!-- SIDEBAR START -->
         <div id="menu">
@@ -308,6 +311,7 @@
         <!-- SIDEBAR END -->
         <!-- CONTENT START -->
         <div id="content">
+            <!-- <h1 class="overSlider">Abrams<span class="tagline">The <b>art of books</b> since 1949</span></h1> -->
          <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
         <div id="slider" class="full" style="height: 900px; 
@@ -315,14 +319,14 @@
             <!-- Slides Container -->
             <div u="slides" class="slides" style="width: 1920px; height: 900px;">
                 <div class="item">
-                	<img u="image" src="images/home/NYC_image.jpg" />
+                    <img u="image" src="images/home/NYC_image.jpg" />
                     <img class="sliderLogo" src="images/AbramsLogoLarge.png" />
                     <div class="caption">New York Air by George Steinmetz</div>
                 </div>
                 <div class="item"><img u="image" src="images/home/sinatra.jpg" /><div class="caption">Sinatra: The Classic Photographs</div></div>
                 <div class="item"><img u="image" src="images/home/astronaut.jpg" />
 
-                <div class="caption darkCaption">The Art of the Simon and Kirby Studio</div></div>
+                <div class="caption">The Art of the Simon and Kirby Studio</div></div>
             </div>
              <!-- Arrow Navigator Skin Begin
                     /* jssor slider bullet navigator skin 05 css */
@@ -401,7 +405,7 @@
 			</div><!--end of .row-->
             
             
-            <div class="row" >
+            <div class="row">
 				<div class="small-12 medium-4 xxlarge-3 columns seller next2singleImg">
                     <div class="offHover purple">
                     <h5>Best Seller</h5>
@@ -523,12 +527,12 @@
             </footer> <!--FOOTER END -->
         
         </div><!--#CONTENT END -->
-            <!-- Foundation javascripts --> 
-			<script src="js/vendor/fastclick.js"></script>
-            <script src="js/foundation.min.js"></script>
-            <script>
-            $(document).foundation();
-            <!-- // end of Foundation javascripts --> 
+        </div><!-- wrapper end -->        <!-- Foundation javascripts --> 
+		<script src="js/vendor/fastclick.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script>
+  		$(document).foundation();
+  		<!-- // end of Foundation javascripts --> 
 		</script>
     </body>
 </html>

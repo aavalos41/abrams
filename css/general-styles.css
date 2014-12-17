@@ -1,4 +1,4 @@
-@charset "utf-a8";
+@charset "utf-8";
 /* CSS Document */
 
 @font-face {
@@ -10,30 +10,23 @@
   src: url(../lib/Gotham-Light.otf);
 }
 
-.qa{
-	display:none;
-	position:absolute;
-	top:0;
-	left:0;subcat
-	opacity:0.5;
-}
+
 
 /* foundation adjustments */
 
-@media only screen and (min-width: 1280px) {
-	.row .row{
-		margin-left: -0.9375em
-	}
-}
-@media (min-width: 1024px) {
-	.columns, .column {
+
+
+@media (min-width: 1025px) {
+	.columns, .column { /* To remove left spaces and double the right to compensate gutters in grids */
 		padding-left: 0px;
 		padding-right: 1.875em;
 }
-	.row .row {
+	.row .row { /* to avoid the sum of margins */
 		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
+
 
 /* General tags */
 
@@ -46,8 +39,33 @@ body,html{
 span,p,h1,h2,h3,h5,li,a{
 	font-family: "Gotham Light", Verdana, Geneva, sans-serif;
 }
-h2, h3, h4 {
+h1, h2, h3, h4 {
 	font-weight: normal;
+}
+h1 {
+	height: 65px;
+	font-size: 2.5em;
+	color: #FFF;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 65px;
+	padding-left: 18px;
+}
+	
+	@media (max-width: 1024px) {
+		h1 {
+			text-align: right;
+			padding-right: 26px;
+		}
+	}
+		
+	@media (min-width: 1025px) {
+		h1 {
+		height: 71px;
+		font-size: 4.5em;
+		padding-left: 39px;
+		line-height: 1;
+	}
 }
 h5{
 	color:#FFF;
@@ -106,8 +124,8 @@ a {
 }
 #baseMenu{
 	position:fixed;
-
-	height:auto;
+	background-color:#FFF;
+	height:100%;
 	text-align:center;
 	top:60px;
 	left:-160px;
@@ -124,23 +142,21 @@ a {
 	cursor:pointer;
 	padding:0px 30px;
 	text-transform:uppercase;
-	margin-top:15px;
+	margin-bottom:15px;
 	background-color:#FFF;
+	line-height: 1
 }
 #bookMenuItem{
 	color:#fd6c35;
 	font-size:24px;
-	line-height:34px;
 }
 #kidsMenuItem{
 	color:#ffb717;
 	font-size:40px;
-	line-height:50px;
 }
 #giftMenuItem{
 	color:#b5be01;
 	font-size:13px;
-	line-height:26px;
 }
 #imprMenuItem{
 	color:#009d4e;
@@ -165,17 +181,17 @@ a {
 #resoMenuItem{
 	color:#ec6851;
 	font-size:15px;
-	line-height:30px;
+	/*line-height:30px;*/
 }
 #cataMenuItem{
 	color:#b08401;
 	font-size:16.5px;
-	line-height:30px;
+	/*line-height:30px;*/
 }
 #compMenuItem{
 	color:#afa198;
 	font-size:17.5px;
-	line-height:30px;
+	/*line-height:30px;*/
 }
 .search{
 	padding-bottom:40px;
@@ -196,18 +212,30 @@ a {
 .subCategory{
 	min-height:100%;
 	height:auto;
-	padding-top:25px;
+	padding-top:45px;
 	padding-bottom:100px;
 }
 .subCategory ul{
 	padding-top: 25px;
+	padding-left: 0;
 }
 
 .subCategory li{
 	list-style-type:none;
 	color:white;
 	text-transform:uppercase;
+	
 }
+.subCategory li a {
+	display: block;
+	width: 100%;
+	line-height: 1;
+	padding: 0.5em 0 0.5em 2.5em;
+}
+.subCategory li a:hover {
+	background-color: rgba(0, 0, 0, 0.5)
+	}
+
 .menuBook{
 	text-align:center;
 	padding-top:30px;
@@ -343,13 +371,13 @@ width: auto;
 @media (min-width:1280px) {
 	#slider .item {
 	width:509px;
-	height:622px
+	height:622px;
 	}
 }
 @media (min-width:1920px) {
 	#slider .item {
 	width:675px;
-	height:826px
+	height:826px;
 	}
 }
 /* Slider Arrows */
@@ -516,6 +544,49 @@ width: auto;
 	top: 60px;
 	width:100%
 }
+h1.overSlider {
+	font-size:4.3em;
+	position:absolute;
+	width:100%;
+	text-align:center;
+	top:1.5em;
+	text-transform:uppercase;
+	z-index:3;
+	color:#fff;
+	letter-spacing:2px;
+	margin:0 auto;
+	padding-right: 0px;
+	padding-left: 0px;
+	line-height: 1;
+	height: auto;
+}
+@media (min-width:768px) {
+	h1.overSlider {
+	top:1.9em
+	}
+}
+@media (min-width:960px) {
+	h1.overSlider {
+	font-size:6.25em;
+	top:1.5em
+	}
+}
+@media (min-width:1024px) {
+	h1.overSlider {
+	top:1.65em
+	}
+}
+@media (min-width:1280px) {
+	h1.overSlider {
+	top:1.8em
+	}
+}
+@media (min-width:1920px) {
+	h1.overSlider {
+	font-size:7.75em;
+	top:2.5em
+	}
+}
 
 /* What are these styles for? */
 .grid {
@@ -586,6 +657,9 @@ margin-right: 1.5%;
 .lightblue{
 	background-color:#26cad3;
 }
+.bluesky{
+	background-color:#13b9db;
+}
 .brown{
 	background-color:#b08401;
 }
@@ -626,7 +700,9 @@ margin-right: 1.5%;
 .darkbeige { /* Neutral color used also as main text color in the site */
 	background-color: #afa198;
 }
-
+.red {
+	background-color: #e31c23;
+}
 #categoriesBlock{
 	font-size:0px;
 	margin-left:10px;
@@ -654,6 +730,12 @@ margin-right: 1.5%;
 .no-padding {
 	padding: 0px !important;
 }
+.no-padding-right {
+	padding-right: 0px !important;
+}
+.no-padding-left {
+	padding-left: 0px !important;
+}
 .ir { /* image replacement */
   font: 0/0 a;
   text-shadow: none;
@@ -665,7 +747,17 @@ margin-right: 1.5%;
 	box-shadow: 0 0 18px 0 rgba(0,0,0,0.4);
 	/* falta la sombra interna */
 }
-
+.column.text,
+.columns.text {
+	padding-left: calc(1.215em + 5px);
+	padding-left: -webkit-calc(1.215em + 5px);
+}	
+@media (min-width: 1024px) {
+		.column.text,
+		.columns.text {
+			padding-left 22px
+		}
+}
 
 
 /* Vertical align */
@@ -683,14 +775,280 @@ margin-right: 1.5%;
   vertical-align: middle;
 }
 
+	/***********************/
+	/*  Hightlight Boxes   */
+	/*   (Commonly used)   */
+	/* (Nested in .columns) */
+	/***********************/
+	/* Note: The format nested in <li> 
+		can be found in authors.css
+		and catalogs.css  */
+
+.highlightBoxes .columns {
+	position:relative;
+}
+@media (max-width:639px) {
+.highlightBoxes .columns {
+width:100%;
+padding:.6em 1.215em
+}
+}
+@media (min-width:640px) {
+.highlightBoxes .columns {
+padding-bottom:33.333%
+}
+}
+.highlightBoxes .columns div.vaWrapper {
+	position:absolute;
+	left:10px;
+	right:10px;
+	top:10px;
+	bottom:10px;
+	text-align:center;
+	line-height:1;
+	color:#fff;
+	font-family:'Gotham Light';
+	text-transform:uppercase;
+}
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper {
+position:relative
+}
+}
+@media (min-width:640px) and (max-width:690px) {
+.highlightBoxes .columns div.vaWrapper {
+left:2px;
+right:2px;
+top:2px;
+bottom:2px
+}
+}
+	/*  Highlight box: Share */
+
+.highlightBoxes .columns div.vaWrapper.share {
+	text-align:center;
+	vertical-align:middle;
+}
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper.share {
+height:150px !important;
+left:0;
+right:0
+}
+}
+.highlightBoxes .columns div.vaWrapper.share .wrapper {
+	font-size:1em;
+	padding:0;
+}
+.highlightBoxes .columns div.vaWrapper.share .wrapper span {
+	font-size:3em;
+	letter-spacing:6px;
+	display:block;
+}
+@media (max-width:640px) {
+.highlightBoxes .columns div.vaWrapper.share .wrapper span {
+font-size:1.2em;
+letter-spacing:3px
+}
+}
+@media (max-width:960px) {
+.highlightBoxes .columns div.vaWrapper.share .wrapper span {
+font-size:1.8em;
+letter-spacing:5px
+}
+}
+.highlightBoxes .columns div.vaWrapper.share .wrapper .shareWidgets {
+	display:inline-block;
+	width:22%;
+	height:60px;
+	font-size:0;
+	padding:0;
+	margin-top:10px;
+	text-align:center;
+}
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper.share .wrapper .shareWidgets {
+min-height:50px
+}
+}
+.highlightBoxes .columns div.vaWrapper.share .wrapper .shareWidgets img {
+	width:auto;
+	vertical-align:bottom
+}
+	/* Highlight box: More */
+
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper.more {
+height:150px !important;
+left:0;
+right:0
+}
+}
+.highlightBoxes .columns div.vaWrapper.more a {
+	display:inline-block;
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+	display:block
+}
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:1.6em;
+vertical-align:middle
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.7em;
+line-height:1.5;
+letter-spacing:2px
+}
+}
+@media (min-width:640px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:2.25em;
+letter-spacing:1px
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.7rem;
+line-height:1.5;
+letter-spacing:1px
+}
+}
+@media (min-width:768px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:2.1em;
+letter-spacing:2px
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.7rem;
+line-height:1.8;
+letter-spacing:2px
+}
+}
+@media (min-width:960px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:2.3em;
+letter-spacing:4px
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.7rem;
+line-height:2;
+letter-spacing:2px
+}
+}
+@media (min-width:1024px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:2.7em;
+letter-spacing:4px
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.7rem;
+line-height:2.2;
+letter-spacing:3px
+}
+}
+@media (min-width:1280px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:3.25em;
+letter-spacing:5px
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.625rem;
+line-height:2.5;
+letter-spacing:3px
+}
+}
+@media (min-width:1920px) {
+.highlightBoxes .columns div.vaWrapper.more a {
+font-size:2.1em
+}
+.highlightBoxes .columns div.vaWrapper.more a span {
+font-size:.7em;
+line-height:2.5;
+letter-spacing:3px
+}
+}
+	/* Highlight box: May Like */
+
+.highlightBoxes .columns div.vaWrapper.mayLike {
+font-size:.875rem;
+	letter-spacing:2px;
+	left:10px;
+	right:10px;
+}
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper.mayLike {
+left:0;
+right:0
+}
+}
+@media (min-width:640px) and (max-width:690px) {
+.highlightBoxes .columns div.vaWrapper.mayLike {
+left:4px;
+right:0;
+top:2px;
+bottom:2px
+}
+}
+@media (max-width:639px) {
+.highlightBoxes .columns div.vaWrapper.mayLike .vaElement {
+padding:10px 0
+}
+}
+.highlightBoxes .columns div.vaWrapper.mayLike .vaElement span {
+	margin:5px auto
+}
+.highlightBoxes .columns div.vaWrapper.mayLike .vaElement img {
+	width:60%;
+	display:block;
+	margin:20px auto 10px;
+}
+@media (min-width:1280px) {
+.highlightBoxes .columns div.vaWrapper.mayLike .vaElement img {
+width:190px;
+margin-top:10px
+}
+}
+/* End of Highlight boxes */
+
 /* Pagination */
 
 #paginationWrapper {
 	font-family: "Gotham Light";
-	margin-top: 22px;
-	padding-top: 0px;
+	margin: 1.375em 0.8em;
+	padding: 0px 25px;
 }
-
+@media (min-width: 1025px) and (max-width: 1280px) {
+	#paginationWrapper {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+@media (max-width: 1279px) {
+	#paginationWrapper {
+		width: -webkit-calc(100% - 1.6em); 
+		width: -moz-calc(100% - 1.6em);
+		width: calc(100% - 1.6em)
+}
+}
+@media (min-width: 1280px) {
+	#paginationWrapper {
+		width: -webkit-calc(83.33333% - 1.2em); 
+		width: -moz-calc(83.33333% - 1.2em);
+		width: calc(83.33333% - 1.2em);
+	}
+}
+#paginationWrapper .columns {
+	padding-top: 0px
+}
+.paginationWrapper {
+	color: #FFF;
+	text-transform: uppercase;
+	padding:  2.8em 0;
+}
+@media (min-width: 1024px) {
+	.paginationWrapper .large-6 {
+		width: 50%
+	}
+}
 ul.pagination {
   display: block;
   min-height: 1.5em;
@@ -745,6 +1103,11 @@ footer {
 	color: #4b4b4d;
 	font-family: "Gotham-Light"
 }
+@media (min-width: 1025px) {
+	footer {
+		padding-left: 0px;
+	}
+}
 footer ul {
 	margin:8px 0;
 	padding: 0
@@ -753,7 +1116,6 @@ footer ul li {
 	display: inline-block;
 }
 footer a {
-	
 	border-right: solid 1px #4b4b4d;
 	padding: 0 5px; 
 	margin: 5px 0 
@@ -781,6 +1143,65 @@ footer a.last {
 }*/
 
 
+
+/* visibility for 960px queries */
+
+
+@media (max-width:959px) {
+	.show-for-960-up {
+	display:none !important
+	}
+	.show-for-960-only {
+	display:none !important
+	}
+	.hide-for-960-up {
+	display:inherit !important
+	}
+	.hide-for-960-only {
+	display:inherit !important
+	}
+}
+@media (min-width:960px) {
+	.show-for-960-up {
+	display:inherit !important
+	}
+	.show-for-960-down {
+	display:inherit !important
+	}
+	.hide-for-960-up {
+	display:none !important
+	}
+	.hide-for-960-down {
+	display:none !important
+	}
+}
+@media (min-width:960px) and (max-width:1023px) {
+	.show-for-960-only {
+	display:inherit !important
+	}
+	.hide-for-960-only {
+	display:none !important
+	}
+}
+
+@media (min-width:1024px) {
+	.show-for-960-only {
+	display:none !important
+	}
+	.show-for-960-down {
+	display:none !important
+	}
+	.hide-for-960-only {
+	display:inherit !important
+	}
+	.hide-for-960-down {
+	display:inherit !important
+	}
+}
+
+
+
+
 /* Media queries adjustments */
 
 @media only screen and (min-width: 64.063em) {
@@ -803,9 +1224,6 @@ footer a.last {
 	#AbramsLogoMenu{
 		display:block;
 	}
-	.baseMenuItem{
-		margin-top:0px;
-	}
 }
 @media only screen and (min-width: 80em) { 
 	footer ul {
@@ -816,5 +1234,30 @@ footer a.last {
 	}
 	footer span {
 		display: block;
+	}
+}
+.pageWrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 80em;
+	position: relative;
+}
+@media only screen and (min-width: 1280px) {
+
+	#baseMenu {
+		left: -webkit-calc(50% - 640px);
+		left: calc(50% - 640px);
+	}
+	#subMenu {
+		left: -webkit-calc(50% - 640px + 160px);
+		left: calc(50% - 640px + 160px);
+	}
+	
+	#content{
+		left: -webkit-calc(50% - 470px);
+		left: calc(50% - 470px);
 	}
 }
