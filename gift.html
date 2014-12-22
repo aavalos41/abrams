@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="js/sliderSettings.js"></script>
 	</head>
     <body>
+        <div class="pageWrapper">
         <!-- HEADER END -->
         <!-- SIDEBAR START -->
         <div id="menu">
@@ -310,11 +311,10 @@
         <div id="content">
          <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
-        <div id="slider" class="full" style="height: 900px; 
-    width: 1920px;">
+ <div id="slider" class="full" style="height: 600px; 
+    width: 1110px;">
             <!-- Slides Container -->
-            <div u="slides" class="slides" style="width: 1920px; height: 900px;">
-                
+            <div u="slides" class="slides" style="width: 1110px; height: 600px;">
                 <div class="item"><img u="image" src="images/sliderPlaceholders/deafo.jpg" /><div class="caption">"Worthy of a superhero." --Kirkus Reviews, starred review</div></div>
                 <div class="item"><img u="image" src="images/sliderPlaceholders/noteries.jpg" /></div>
             </div>
@@ -336,17 +336,19 @@
             <!-- bullet navigator container -->
            <div u="navigator" class="navigator jssorb05" style="">
             <!-- bullet navigator item prototype -->
-            <div u="prototype" style="position: absolute; width: 20px; height: 20px;"></div>
+            <div u="prototype" style=""></div>
         </div>
 
             <!-- Bullet Navigator Skin End -->
           
         </div>
+
+
         <!-- Jssor Slider End -->
         	
         	
             <div class="row" id="newReleases">
-				<div class="small-12 xxlarge-8 columns end">
+				<div class="small-12 columns end">
                 
             
                 
@@ -355,7 +357,7 @@
 			</div><!--end of .row-->
             
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end performingArts">
+				<div class="small-12 columns end performingArts">
                     <div class="offHover lightblue">
                         <div class="imageRight"><img src="images/home/simpsons.jpg" /></div>
                         <div class="text">
@@ -375,7 +377,7 @@
 				</div><!--end of .columns-->
 			</div><!--end of .row-->
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end photography">
+				<div class="small-12 columns end photography">
                     <div class="offHover darkorange">
                 	<div class="imageLeft"><img src="images/home/clinch.jpg" /></div>
                 	<div class="text">
@@ -396,7 +398,7 @@
             
             
             <div class="row" >
-				<div class="small-12 medium-4 xxlarge-3 columns seller next2singleImg">
+				<div class="small-12 medium-4 columns seller next2singleImg">
                     <div class="offHover purple">
                     <h5>Best Seller</h5>
                     	<img class="prettyCovers" src="images/home/bookThumb1.jpg" />
@@ -409,7 +411,7 @@
                     </div>
                     </div>
 				</div>
-				<div class="small-12 medium-8 xxlarge-5 columns end singleImage">
+				<div class="small-12 medium-8 columns end singleImage">
                     <div class="offHover lightBlue">
                     <img src="images/home/wimpy.jpg" />
                     <div class="onHover darkHover lightblue vaWrapper">
@@ -425,7 +427,7 @@
             
             
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end singleImageFull">
+				<div class="small-12 columns end singleImageFull">
                     <div class="offHover">
 	            		<img src="images/home/noterie.png" />
                     <div class="onHover pink2 vaWrapper">
@@ -440,7 +442,7 @@
 			</div><!--end of .row-->
             
             <div class="row" >
-				<div class="small-12 medium-8 xxlarge-5 columns end fashion">
+				<div class="small-12 medium-8 columns end fashion">
                     <div class="offHover pink">
                 		<div class="imageLeft">
                 			<img src="images/home/tory.jpg" />
@@ -459,7 +461,7 @@
                     </div>
                     </div>
 				</div>
-				<div class="small-12 medium-4 xxlarge-3 columns end seller">
+				<div class="small-12 medium-4 columns end seller">
                     <div class="offHover orange">
                     <h5>Best Seller</h5>
                     	<img class="prettyCovers" src="images/home/bookThumb2.jpg" />
@@ -476,7 +478,7 @@
             
             <!-- Replace with categories from DB? -->
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end">
+				<div class="small-12 columns end">
                     <div id="categoriesBlock">
                         <a href="#" class="brown">Art</a>
                         <a href="#" class="orange">ComicArts</a>
@@ -517,6 +519,7 @@
             </footer> <!--FOOTER END -->
         
         </div><!--#CONTENT END -->
+    </div><!--#pageWrapper END -->
             <!-- Foundation javascripts --> 
 			<script src="js/vendor/fastclick.js"></script>
             <script src="js/foundation.min.js"></script>

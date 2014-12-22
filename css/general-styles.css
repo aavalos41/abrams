@@ -10,7 +10,15 @@
   src: url(../lib/Gotham-Light.otf);
 }
 
-
+.pageWrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 80em;
+	position: relative;
+}
 
 /* foundation adjustments */
 
@@ -138,6 +146,9 @@ a {
 	margin-top:66px;
 	padding:0px;
 }
+.home #baseMenu ul{
+	margin-top: 25px
+	}
 .baseMenuItem{
 	cursor:pointer;
 	padding:0px 30px;
@@ -146,6 +157,9 @@ a {
 	background-color:#FFF;
 	line-height: 1
 }
+.home .baseMenuItem{
+	margin-bottom: 10px;
+	}
 #bookMenuItem{
 	color:#fd6c35;
 	font-size:24px;
@@ -204,7 +218,7 @@ a {
 	left:-280px;
 	width: 0px;
 	overflow:auto;
-	z-index:4;
+	z-index:2;
 }
 #subMenu ul{
 	margin:0;
@@ -224,6 +238,7 @@ a {
 	list-style-type:none;
 	color:white;
 	text-transform:uppercase;
+	width: 240px;
 	
 }
 .subCategory li a {
@@ -336,8 +351,13 @@ width: auto;
 	width: 53% !important;
 	margin: 0 auto;
 	display: block;
-	margin-top: 250px;
+	margin-top: 246px;
 	vertical-align: middle;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 @media (max-width:639px) {
 	#slider .item {
@@ -417,6 +437,15 @@ width: auto;
 	overflow: hidden;
 	cursor: pointer;
 	}
+@media (min-width: 1025px) {
+	.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+		-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:10px;
+	height:10px;
+	}
+}
 
 .jssorb05 div {
     background-color: #FFF;
@@ -436,13 +465,16 @@ width: auto;
 
 .navigator {
 	position: absolute; 
-	bottom: 16px; 
-	right: 6px;
+	bottom: 49px; 
+	right: 0;
+	left: 0;
+	margin: 0 auto;
 }
 @media (min-width:1025px) {
 	#slider .navigator {
-		right: 120px !important
-		bottom: -60px !important;
+		right: 25px !important;
+		margin-right: 0;
+		bottom: 47px; 
 		}
 	}
 #prototype {
@@ -456,14 +488,10 @@ width: auto;
 @media (min-width:1025px) {
 	#slider .controls {
 	margin:-30px 120px auto auto;
-	text-align:right
+	text-align:right;
 	}
 }
-@media (min-width:1920px) {
-	#slider .controls {
-	margin:-30px 50px auto auto
-	}
-}
+
 #slider.full .controls {
 	position: absolute; 
 	bottom: 4px; 
@@ -497,27 +525,20 @@ width: auto;
 	text-align:center;
 	font-family:'Gotham Light';
 	color:#9b9b9b;
+	font-size: 0.975em;
 }
 @media (min-width:1025px) {
 #slider .caption {
 	text-align:right;
 	padding-right:120px;
 	color:#fff;
-	margin-top:10px
-	}
-}
-@media (min-width:1920px) {
-	#slider .caption {
-	text-align:right;
-	padding-right:50px;
-	color:#fff;
-	margin-top:10px
+	margin-top:10px;
+	font-size: 0.875em;
 	}
 }
 #slider.full .caption {
 	position:  absolute;
-	bottom: 20px;
-	font-size: 24px;
+	bottom: 10px;
 	padding-right: 0px;
 	color:#FFF;
 	left:0;
@@ -526,14 +547,11 @@ width: auto;
 }
 @media (min-width:1025px) {
 #slider.full .caption {
-	right:20px
-	}
-}
-@media (min-width:1920px) {
-	#slider.full .caption {
 	right:20px;
+	bottom: 18px;
 	}
 }
+
 
 /* content */
 
@@ -578,7 +596,7 @@ h1.overSlider {
 }
 @media (min-width:1280px) {
 	h1.overSlider {
-	top:1.8em
+	top:2.7em
 	}
 }
 @media (min-width:1920px) {
@@ -829,6 +847,47 @@ bottom:2px
 	text-align:center;
 	vertical-align:middle;
 }
+.highlightBoxes .vaWrapper.share .wrapper {
+	min-width: 90% 
+}
+.highlightBoxes .shareWidgets a {
+	display: inline-block;
+	width: 100%;
+	height: 64px;
+}
+.highlightBoxes .shareWidgets a.fb {
+	background-image: url('../images/social-icons/APIs/share_example_facebook_off.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	}
+.highlightBoxes .shareWidgets a.fb:hover {
+	background-image: url('../images/social-icons/APIs/share_example_facebook.jpg');
+}
+.highlightBoxes .shareWidgets a.tw {
+	background-image: url('../images/social-icons/APIs/share_example_twitter_off.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	}
+.highlightBoxes .shareWidgets a.tw:hover {
+	background-image: url('../images/social-icons/APIs/share_example_twitter.jpg');
+}
+.highlightBoxes .shareWidgets a.in {
+	background-image: url('../images/social-icons/APIs/share_example_linkedin_off.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	}
+.highlightBoxes .shareWidgets a.in:hover {
+	background-image: url('../images/social-icons/APIs/share_example_linkedin.jpg');
+}
+.highlightBoxes .shareWidgets a.go {
+	background-image: url('../images/social-icons/APIs/share_example_plus_off.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	}
+.highlightBoxes .shareWidgets a.go:hover {
+	background-image: url('../images/social-icons/APIs/share_example_plus.jpg');
+}
+
 @media (max-width:639px) {
 .highlightBoxes .columns div.vaWrapper.share {
 height:150px !important;
@@ -845,6 +904,7 @@ right:0
 	letter-spacing:6px;
 	display:block;
 }
+
 @media (max-width:640px) {
 .highlightBoxes .columns div.vaWrapper.share .wrapper span {
 font-size:1.2em;
@@ -866,6 +926,7 @@ letter-spacing:5px
 	margin-top:10px;
 	text-align:center;
 }
+
 @media (max-width:639px) {
 .highlightBoxes .columns div.vaWrapper.share .wrapper .shareWidgets {
 min-height:50px
@@ -875,6 +936,8 @@ min-height:50px
 	width:auto;
 	vertical-align:bottom
 }
+
+
 	/* Highlight box: More */
 
 @media (max-width:639px) {
@@ -1016,7 +1079,7 @@ margin-top:10px
 	margin: 1.375em 0.8em;
 	padding: 0px 25px;
 }
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) {
 	#paginationWrapper {
 		margin-left: 0px;
 		margin-right: 0px;
@@ -1105,7 +1168,7 @@ footer {
 }
 @media (min-width: 1025px) {
 	footer {
-		padding-left: 0px;
+		padding-left: 5px;
 	}
 }
 footer ul {
@@ -1220,6 +1283,7 @@ footer a.last {
 	#content{
 		left:160px;
 		width:auto;
+		min-width:900px;
 	}
 	#AbramsLogoMenu{
 		display:block;
@@ -1236,15 +1300,7 @@ footer a.last {
 		display: block;
 	}
 }
-.pageWrapper {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	max-width: 80em;
-	position: relative;
-}
+
 @media only screen and (min-width: 1280px) {
 
 	#baseMenu {
@@ -1255,9 +1311,8 @@ footer a.last {
 		left: -webkit-calc(50% - 640px + 160px);
 		left: calc(50% - 640px + 160px);
 	}
-	
 	#content{
-		left: -webkit-calc(50% - 470px);
-		left: calc(50% - 470px);
+		
 	}
+	
 }

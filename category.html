@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="js/menuManager.js"></script>
 		<script type="text/javascript" src="js/sliderSettings.js"></script>
 	</head>
-    <body>
+    <body><div class="pageWrapper">
         <!-- HEADER END -->
         <!-- SIDEBAR START -->
         <div id="menu">
@@ -311,28 +311,41 @@
         <div id="content">
             <h1 class="overSlider">Fashion</h1>
          <!-- Jssor Slider Begin -->
-	        <div id="slider" class="full" style="height: 900px; 
-	    width: 1920px;">
-	            <!-- Slides Container -->
-	            <div u="slides" class="slides" style="width: 1920px; height: 900px;">
-	                <div class="item"><img u="image" src="images/category/carousel1.jpg" /><div class="caption">Image caption</div></div>
-	            </div>
-				<!-- Arrow Left --> 
-				<span u="arrowleft" class="arrowLeft jssora03l"> </span> 
-				<!-- Arrow Right --> 
-				<span u="arrowright" class="arrowRight jssora03r"> </span> 
-				<!-- Arrow Navigator Skin End --> 
-	          
-				<!-- bullet navigator container -->
-				<div u="navigator" class="navigator jssorb05" style="">
-				<!-- bullet navigator item prototype -->
-					<div u="prototype" style="position: absolute; width: 20px; height: 20px;"></div>
-				</div><!-- Bullet Navigator Skin End -->
-			</div><!-- #Slider End -->
+	         <div id="slider" class="full" style="height: 600px; 
+    width: 1110px;">
+            <!-- Slides Container -->
+            <div u="slides" class="slides" style="width: 1110px; height: 600px;">
+                
+                <div class="item"><img u="image" src="images/category/carousel1.jpg" /><div class="caption darkCaption">Image caption here</div></div>
+            </div>
+             <!-- Arrow Navigator Skin Begin
+                    /* jssor slider bullet navigator skin 05 css */
+            
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+             -->
+          <!-- Arrow Left --> 
+          <span u="arrowleft" class="arrowLeft jssora03l"> </span> 
+          <!-- Arrow Right --> 
+          <span u="arrowright" class="arrowRight jssora03r"> </span> 
+          <!-- Arrow Navigator Skin End --> 
+          
+            <!-- bullet navigator container -->
+           <div u="navigator" class="navigator jssorb05" style="">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style=""></div>
+        </div>
+
+            <!-- Bullet Navigator Skin End -->
+          
+        </div><!-- #Slider End -->
 
 			<div class="row">
 				<!-- START RESULTS -->
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end" id="results">
+				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end" id="results">
                     <!--The following row will be shown only in mobile (up to 320px) -->
                     <div class="row show-for-xsmall-only"  data-equalizer>
                         
@@ -406,10 +419,10 @@
                     </ul>
 
 				</div> <!-- END #RESULTS -->
-                <div id="paginationWrapper" class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end pink">
+                <div id="paginationWrapper" class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end pink">
                     <div class="paginationWrapper row">
                         <div class="small-12 large-6 columns">
-                            <div class="displaying">Dislaying 1 to 30</div>
+                            <div class="displaying">Displaying 1 to 30</div>
                             <div class="products">(0f 280 products)</div>
                         </div>
                         <div class="small-12 large-6 columns">
@@ -444,7 +457,7 @@
                 <span>&copy; 2014 ABRAMS -- A subsidiary of La Martini&egrave;re Groupe</span>
             </footer> <!--FOOTER END -->
         </div> <!--#CONTENT END -->
-
+</div><!--#pageWrapper END -->
                 <!-- Foundation javascripts --> 
 		<script src="js/vendor/fastclick.js"></script>
 		<script src="js/foundation.min.js"></script>

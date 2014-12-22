@@ -13,9 +13,8 @@
 		<script src="js/vendor/modernizr.js"></script>
 		<script type="text/javascript" src="js/menuManager.js"></script>
 	</head>
-    <body>
-    	<script src="js/foundation/foundation.js"></script>
-		<script src="js/foundation/foundation.equalizer.js"></script>
+    <body><div class="pageWrapper">
+    	
         <!-- HEADER END -->
 <!-- SIDEBAR START -->
         <div id="menu">
@@ -310,7 +309,7 @@
         <div id="content">
 			<h1 class="pink">Events</h1>
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end events">
+				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end events">
 					<div class="mainEvent darkbeige">
 						<h2>Thursday, October 23</h2>
 						<ul>
@@ -391,16 +390,16 @@
 			</div>
 			<!-- Highlight Boxes -->
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end">
+				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end">
 					<div class="row highlightBoxes">
 						<div class="columns small-4">
 							<div class="darkbeige share vaWrapper">
 								<div class="wrapper vaElement">
 									<span>share</span>
-									<div class="shareWidgets"><img src="images/fpo-share-fb.png" alt="" /></div>
-									<div class="shareWidgets"><img src="images/fpo-share-go.png" alt="" /></div>
-									<div class="shareWidgets"><img src="images/fpo-share-pin.png" alt="" /></div>
-									<div class="shareWidgets"><img src="images/fpo-share-tw.png" alt="" /></div>
+									<div class="shareWidgets"><a href="#" class="fb"></a></div>
+                                <div class="shareWidgets"><a href="#" class="tw"></a></div>
+                                <div class="shareWidgets"><a href="#" class="in"></a></div>
+                                <div class="shareWidgets"><a href="#" class="go"></a></div>
 								</div>
 							</div>
 						</div>
@@ -440,7 +439,7 @@
 <span>&copy; 2014 ABRAMS -- A subsidiary of La Martini&egrave;re Groupe</span>
 		</footer>
 		</div><!--end of #content-->
-		
+		</div><!--#pageWrapper END -->
 
         <!-- Foundation javascripts --> 
 		<script src="js/vendor/fastclick.js"></script>

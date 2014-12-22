@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="js/menuManager.js"></script>
 		<script type="text/javascript" src="js/sliderSettings.js"></script>
 	</head>
-    <body>
+    <body><div class="pageWrapper">
         <!-- HEADER END -->
         <!-- SIDEBAR START -->
         <div id="menu">
@@ -311,7 +311,7 @@
         <div id="content">
             <h1 class="brown">Catalogs</h1>
         	<div class="row">
-        		<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end" id="results">
+        		<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end" id="results">
 					<ul class="small-block-grid-2 medium-block-grid-3">
 	                    
 	                    <li><a href="#" class="book vaWrapper"><div class="clickToRead">Click to read</div><img src="images/catalogs/fpo-catalogs-cover1.jpg" alt="" class="vaElement"/><div class="text">ABRAMS Spring 2015</div></a></li>
@@ -329,16 +329,16 @@
 	            </div>
 	        </div>
 	        <div class="row">
-        		<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 xxlarge-8 columns end highlightBoxes">
+        		<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end highlightBoxes">
 	                <ul class="small-block-grid-3">
 	                	<li>
 	                    <div class="darkbeige share vaWrapper">
 	                    	<div class="wrapper vaElement">
 								<span>share</span>
-								<div class="shareWidgets"><img src="images/fpo-share-fb.png" alt="" /></div>
-								<div class="shareWidgets"><img src="images/fpo-share-go.png" alt="" /></div>
-								<div class="shareWidgets"><img src="images/fpo-share-pin.png" alt="" /></div>
-								<div class="shareWidgets"><img src="images/fpo-share-tw.png" alt="" /></div>
+								<div class="shareWidgets"><a href="#" class="fb"></a></div>
+                                <div class="shareWidgets"><a href="#" class="tw"></a></div>
+                                <div class="shareWidgets"><a href="#" class="in"></a></div>
+                                <div class="shareWidgets"><a href="#" class="go"></a></div>
 							</div>
 						</div></li>
 						<li>
@@ -376,7 +376,7 @@
                 <span>&copy; 2014 ABRAMS -- A subsidiary of La Martini&egrave;re Groupe</span>
             </footer> <!--FOOTER END -->
         </div> <!--#CONTENT END -->
-
+    </div><!--#pageWrapper END -->
                 <!-- Foundation javascripts --> 
 		<script src="js/vendor/fastclick.js"></script>
 		<script src="js/foundation.min.js"></script>

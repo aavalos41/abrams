@@ -5,8 +5,8 @@ $(document).ready(function() {
 	var baseMenuFlag=false; //variable to keep track if menu is open
 	
 	//scroll
-	 $("#baseMenu").niceScroll();
-	 $("#subMenu").niceScroll();
+	 $("#baseMenu").niceScroll({horizrailenabled:false,zindex:6});
+	 $("#subMenu").niceScroll({horizrailenabled:false,zindex:3});
 	//click or tap hamburger menu
 	$("#mobile-menu").click(function(){
 		if(baseMenuFlag){
@@ -33,7 +33,6 @@ $(document).ready(function() {
 	var selectedMenu="";
 	$('.baseMenuItem').click(function(){
 			if(selectedMenu!="")invertColor(selectedMenu+"MenuItem");
-			console.log("width "+ $('#content').width());
 		if(selectedMenu==$(this).closest('li').attr('id').substr(0,4)){
 			//close submenu
 			$('#subMenu').stop(true, true).animate({'width' : "0px" });
@@ -64,16 +63,7 @@ $(document).ready(function() {
 				
 		});
 		$("#content").click(function(){
-			if(baseMenuFlag){
-				$('#baseMenu').stop(true, true).animate({'left' : "-160px" });
-				$('#subMenu').stop(true, true).animate({'left' : "0px" });
-				$('#content').stop(true, true).animate({'left' : "0px" });
-				$('#subMenu div').stop(true, true).hide();
-				$('#subMenu').stop(true, true).animate({'width' : "0px" });
-			}else if(selectedMenu!=""){
-				$('#subMenu').stop(true, true).animate({'width' : "0px" });
-				$('#content').stop(true, true).animate({'left' : "160px" });
-			}
+			closeAll();
 		});
 	
 		$('.offHover').hover(  
@@ -91,5 +81,58 @@ $(document).ready(function() {
 			 $('#'+id).css("color",backC);
 			 $('#'+id).css("background-color",fontC);
 		 }
-	
+		 
+			if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleMenu);
+            }
+
+
+            if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+                $(window).bind("orientationchange", ScaleMenu);
+            }
+			
+			function ScaleMenu() {
+				//var clientWidth=$(window).width();
+				var clientWidth=document.body.clientWidth;
+				console.log('window '+clientWidth);
+				closeAll()
+				if(clientWidth>1024&&clientWidth<1280){
+					$('#content').stop(true, true).animate({'left' : "160px" });
+					$('#subMenu').stop(true, true).animate({'left' : "160px" });
+					$('#baseMenu').stop(true, true).animate({'left' : "0px" });
+				}else if(clientWidth>1280){
+					$('#content').stop(true, true).animate({'left' : "160px" });
+					$('#baseMenu').css('left','50%').css('left','-=640px');
+					$('#subMenu').css('left','50%').css('left','-=480px');
+				}else{
+					$('#content').stop(true, true).animate({'left' : "0px" });
+					$('#baseMenu').stop(true, true).animate({'left' : "-160px" });
+					$('#subMenu').stop(true, true).animate({'left' : "0px" });
+				}
+            }
+			function closeAll(){
+				if(baseMenuFlag){
+					$('#baseMenu').stop(true, true).animate({'left' : "-160px" });
+					$('#subMenu').stop(true, true).animate({'left' : "0px" });
+					$('#content').stop(true, true).animate({'left' : "0px" });
+					$('#subMenu div').stop(true, true).hide();
+					$('#subMenu').stop(true, true).animate({'width' : "0px" });
+					baseMenuFlag=false;
+					if(selectedMenu!=""){
+						$('#subMenu').stop(true, true).animate({'width' : "0px" });
+						invertColor(selectedMenu+'MenuItem');
+						selectedMenu="";
+					}
+				}else if(selectedMenu!=""){
+					$('#subMenu').stop(true, true).animate({'width' : "0px" });
+					$('#content').stop(true, true).animate({'left' : "160px" });
+					invertColor(selectedMenu+'MenuItem');
+					selectedMenu="";
+				}
+			}
+
+            ScaleMenu();
+			
+			
+			
 });

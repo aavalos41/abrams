@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 		<script type="text/javascript" src="js/menuManager.js"></script>
 		<script type="text/javascript" src="js/sliderSettings.js"></script>
+		<script type="text/javascript" src="js/newReleases.js"></script>
 	</head>
     <body>
         <script src="js/foundation/foundation.js"></script>
@@ -314,19 +315,20 @@
             <!-- <h1 class="overSlider">Abrams<span class="tagline">The <b>art of books</b> since 1949</span></h1> -->
          <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
-        <div id="slider" class="full" style="height: 900px; 
-    width: 1920px;">
+        <div id="slider" class="full" style="height: 600px; 
+    width: 1100px;">
             <!-- Slides Container -->
-            <div u="slides" class="slides" style="width: 1920px; height: 900px;">
+            <div u="slides" class="slides" style="width: 1100px; height: 600px;">
                 <div class="item">
-                    <img u="image" src="images/home/NYC_image.jpg" />
+                    <img u="image" src="images/home/home_carousel_img_1.jpg" />
                     <img class="sliderLogo" src="images/AbramsLogoLarge.png" />
-                    <div class="caption">New York Air by George Steinmetz</div>
+                    <div class="caption">Image caption here</div>
                 </div>
-                <div class="item"><img u="image" src="images/home/sinatra.jpg" /><div class="caption">Sinatra: The Classic Photographs</div></div>
-                <div class="item"><img u="image" src="images/home/astronaut.jpg" />
-
-                <div class="caption">The Art of the Simon and Kirby Studio</div></div>
+                <div class="item"><img u="image" src="images/home/home_carousel_img_2.jpg" /><div class="caption darkCaption">Image caption here</div></div>
+                <div class="item"><img u="image" src="images/home/home_carousel_img_3.jpg" /><div class="caption">Image caption here</div></div>
+                <div class="item"><img u="image" src="images/home/home_carousel_img_4.jpg" /><div class="caption darkCaption">Image caption here</div></div>
+                <div class="item"><img u="image" src="images/home/home_carousel_img_5.jpg" /><div class="caption darkCaption">Image caption here</div></div>
+                <div class="item"><img u="image" src="images/home/home_carousel_img_6.jpg" /><div class="caption darkCaption">Image caption here</div></div>
             </div>
              <!-- Arrow Navigator Skin Begin
                     /* jssor slider bullet navigator skin 05 css */
@@ -346,7 +348,7 @@
             <!-- bullet navigator container -->
            <div u="navigator" class="navigator jssorb05" style="">
             <!-- bullet navigator item prototype -->
-            <div u="prototype" style="position: absolute; width: 20px; height: 20px;"></div>
+            <div u="prototype" style=""></div>
         </div>
 
             <!-- Bullet Navigator Skin End -->
@@ -356,16 +358,98 @@
         	
         	
             <div class="row" id="newReleases">
-				<div class="small-12 xxlarge-8 columns end">
-                
+				<div class="small-12 columns end">
+                <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+    <div id="releasesSlider" style="position: relative; top: 0px; left: 0px; width: 1100px; height: 360px; overflow: hidden; background-color:#EBE6E3;">
+
+        <!-- Slides Container -->
+        <h5 style="color:#afa198;letter-spacing: 5px;font-size: 1.05em; margin-top:27px;">NEW RELEASES</h5>
+                <div u="slides" style="cursor: move; position: absolute; left: 80px; top: 22px; width: 960px; height: 300px; overflow: hidden; background-color:#EBE6E3">
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book01.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            <div class="hoverelement">
+                <a u="image" href="" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book02.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            <div class="hoverelement">
+                <a u="image" href="" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book03.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+
             
-                
-					<img src="images/home/newReleasesFPO.jpg" />
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book04.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book05.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book06.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 03 css */
+            /*
+            .jssora03l              (normal)
+            .jssora03r              (normal)
+            .jssora03l:hover        (normal mouseover)
+            .jssora03r:hover        (normal mouseover)
+            .jssora03ldn            (mousedown)
+            .jssora03rdn            (mousedown)
+            */
+            .releasesLeft, .releasesRight
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                overflow:hidden;
+            }
+            .releasesLeft:hover, .releasesRight:hover
+            {
+            	background-position:0px;
+            }
+            .releasesLeft { background: url(images/arrowLeft.png) no-repeat;width: 12px; height: 34px; top: 141px; left: 25px; }
+            .releasesRight { background: url(images/arrowRight.png) no-repeat;width: 12px; height: 34px; top: 141px; right: 25px }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="releasesLeft jssora03l" style="">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="releasesRight jssora03r" style="">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+    </div>
+    <!-- Jssor Slider End -->
+            
 				</div><!--end of .columns-->
 			</div><!--end of .row-->
             
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end performingArts">
+				<div class="small-12 columns end performingArts">
                     <div class="offHover lightblue">
                         <div class="imageRight"><img src="images/home/simpsons.jpg" /></div>
                         <div class="text">
@@ -385,7 +469,7 @@
 				</div><!--end of .columns-->
 			</div><!--end of .row-->
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end photography">
+				<div class="small-12 columns end photography">
                     <div class="offHover darkorange">
                 	<div class="imageLeft"><img src="images/home/clinch.jpg" /></div>
                 	<div class="text">
@@ -406,7 +490,7 @@
             
             
             <div class="row">
-				<div class="small-12 medium-4 xxlarge-3 columns seller next2singleImg">
+				<div class="small-12 medium-4 columns seller next2singleImg">
                     <div class="offHover purple">
                     <h5>Best Seller</h5>
                     	<img class="prettyCovers" src="images/home/bookThumb1.jpg" />
@@ -419,7 +503,7 @@
                     </div>
                     </div>
 				</div>
-				<div class="small-12 medium-8 xxlarge-5 columns end singleImage">
+				<div class="small-12 medium-8 columns end singleImage">
                     <div class="offHover lightBlue">
                     <img src="images/home/wimpy.jpg" />
                     <div class="onHover darkHover lightblue vaWrapper">
@@ -435,7 +519,7 @@
             
             
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end singleImageFull">
+				<div class="small-12 columns end singleImageFull">
                     <div class="offHover">
 	            		<img src="images/home/noterie.png" />
                     <div class="onHover pink2 vaWrapper">
@@ -450,7 +534,7 @@
 			</div><!--end of .row-->
             
             <div class="row" >
-				<div class="small-12 medium-8 xxlarge-5 columns end fashion">
+				<div class="small-12 medium-8 columns end fashion">
                     <div class="offHover pink">
                 		<div class="imageLeft">
                 			<img src="images/home/tory.jpg" />
@@ -469,7 +553,7 @@
                     </div>
                     </div>
 				</div>
-				<div class="small-12 medium-4 xxlarge-3 columns end seller">
+				<div class="small-12 medium-4 columns end seller">
                     <div class="offHover orange">
                     <h5>Best Seller</h5>
                     	<img class="prettyCovers" src="images/home/bookThumb2.jpg" />
@@ -486,7 +570,7 @@
             
             <!-- Replace with categories from DB? -->
             <div class="row" >
-				<div class="small-12 xxlarge-8 columns end">
+				<div class="small-12 columns end">
                     <div id="categoriesBlock">
                         <a href="#" class="brown">Art</a>
                         <a href="#" class="orange">ComicArts</a>

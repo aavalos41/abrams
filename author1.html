@@ -14,7 +14,7 @@
 		<script src="js/vendor/modernizr.js"></script>
 		<script type="text/javascript" src="js/menuManager.js"></script>
 	</head>
-    <body>
+    <body><div class="pageWrapper">
     	<script src="js/foundation/foundation.js"></script>
 		<script src="js/foundation/foundation.equalizer.js"></script>
         <!-- HEADER END -->
@@ -311,7 +311,7 @@
         <div id="content">
 			<h1 class="lightblue">Authors</h1>
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-11 columns end author">
+				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end author">
 					<div class="row darkbeige" data-equalizer>
 						<div class="small-12 xlarge-12 columns end text">
 							<img src="images/author/fpo-author-photo.jpg" alt="" class="authorPhoto show-for-large-up" data-equalizer-watch/>
@@ -322,7 +322,7 @@
 				</div>
 			</div>
 			<div class="row">
-                <div class="small-11 small-centered medium-12 large-uncentered xlarge-11 columns end" id="results" >
+                <div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end" id="results" >
                 	<!-- The following row will show in small screens only -->
                 	<div class="row authorBoxesWrapper show-for-small-only" data-equalizer>
                 		<div class="small-6 medium-4 columns authorBoxes hide-for-960-up" data-equalizer-watch>
@@ -441,21 +441,21 @@
             </div>    
 			<!-- Highlight Boxes -->
 			<div class="row">
-                <div class="small-11 small-centered medium-12 large-uncentered xlarge-11 columns end highlightBoxes">
+                <div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end highlightBoxes">
                     <ul class="small-block-grid-3">
                         <li>
                         <div class="darkbeige share vaWrapper">
                             <div class="wrapper vaElement">
                                 <span>share</span>
-                                <div class="shareWidgets"><img src="images/fpo-share-fb.png" alt="" /></div>
-                                <div class="shareWidgets"><img src="images/fpo-share-go.png" alt="" /></div>
-                                <div class="shareWidgets"><img src="images/fpo-share-pin.png" alt="" /></div>
-                                <div class="shareWidgets"><img src="images/fpo-share-tw.png" alt="" /></div>
+                                <div class="shareWidgets"><a href="#" class="fb"></a></div>
+                                <div class="shareWidgets"><a href="#" class="tw"></a></div>
+                                <div class="shareWidgets"><a href="#" class="in"></a></div>
+                                <div class="shareWidgets"><a href="#" class="go"></a></div>
                             </div>
                         </div></li>
                         <li>
-                        <div class="bluesky more vaWrapper">
-                            <a href="#" class="vaElement"><span>Other categories</span>Comics</a>
+                        <div class="pink more vaWrapper">
+                            <a href="#" class="vaElement"><span>Other categories</span>Craft</a>
                         </div></li>
                         <li>
                             <div class="darkbeige mayLike vaWrapper">
@@ -487,7 +487,7 @@
 <span>&copy; 2014 ABRAMS -- A subsidiary of La Martini&egrave;re Groupe</span>
 		</footer>
 		</div><!--end of #content-->
-		
+		</div><!--#pageWrapper END -->
 
         <!-- Foundation javascripts --> 
 		<script src="js/vendor/fastclick.js"></script>
