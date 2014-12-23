@@ -85,7 +85,7 @@ h1 .tagline b {
 @media (min-width: 1025px) {
 	.columns, .column {
 		padding-left: 0px;
-		padding-right: 1.2em;
+		padding-right: 25px;
 }
 }
 h3, h2 {
@@ -249,7 +249,7 @@ h3, h2 {
 		padding-right: 25px
 	}
 	.seller.end {
-		padding-right: 1.2em;
+		padding-right: 25px;
 	}
 }
 

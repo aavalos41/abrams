@@ -96,7 +96,7 @@ $(document).ready(function() {
 				var clientWidth=document.body.clientWidth;
 				console.log('window '+clientWidth);
 				closeAll()
-				if(clientWidth>1024&&clientWidth<1280){
+				if(clientWidth>1024&&clientWidth<=1280){
 					$('#content').stop(true, true).animate({'left' : "160px" });
 					$('#subMenu').stop(true, true).animate({'left' : "160px" });
 					$('#baseMenu').stop(true, true).animate({'left' : "0px" });
