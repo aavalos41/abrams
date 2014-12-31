@@ -4,7 +4,9 @@
 	
 	@media (min-width 1025px)
 		padding-left 0
-		padding-right 1.2em
+		padding-right 0
+	
+		
 	/* Styles for making the grid have two columns from 640 to 959px */
 	.medium-4
 		@media (min-width:640px) and (max-width: 959px)
@@ -39,6 +41,8 @@
 			
 	ul 
 		margin 0 -20px
+		position relative
+		min-height 1px
 		
 		@media (min-width: 1025px)
 			margin 0
@@ -48,16 +52,42 @@
 		background-color: #F4F4F4
 		width 100%
 		height 100%
-		display block	
+		display block
+		position relative
+		line-height 1.5em
+		//float left
+		margin 0	
 
 	ul li,
 	.columns
 		text-align center
-		padding 0.8rem
+		padding 1.6rem 0.8rem 0
 		font-family "Gotham Light"
+		height 294px
 		
-		@media (min-width: 1025px)
-			padding 0.8rem 0.6rem
+		@media (max-width 639px)
+			height 360px
+			&.no-padding
+				height auto
+			
+		@media (min-width 641px)
+			height 340px
+
+		@media (min-width 768px)
+			height 384px
+			
+		@media (min-width 960px)
+			height 320px
+			&.no-padding
+				height 640px
+
+		@media (min-width 1024px)
+			height 342px
+		
+		@media (min-width 1025px)
+			height 340px
+			padding 1.8rem 0.6rem 0
+			
 			&:nth-of-type(3n+1),
 			&.no-padding-left
 				padding-left 0px
@@ -66,55 +96,128 @@
 			&.no-padding-right
 				padding-right 0px
 				padding-left 1.2rem
-			&.medium-8 /* the parente of featured box */
+			&.medium-8 /* the parent of featured box */
 				padding-right 0.6rem
 			&.no-padding .columns
 				padding-left 1.2rem !important
 				padding-right 0px !important
-		
+
+		@media (min-width 1280px)
+			height 383px
+
+		&.medium-8,
+		.featured
+			height 575px
+			overflow hidden
+				
+			@media (min-width 768px)
+				height 587px
+				
+			@media (min-width 960px)
+				height 640px
+
+			@media (min-width 1024px)
+				height 690px
+			
+			@media (min-width 1025px)
+				height 680px
+				
+			@media (min-width 1280px)
+				height 765px
+
 		a 
 			display inline-block
 			vertical-align middle
+			position relative
+			
+			.prettyCovers
+				top 40px
+			
+			// &.book:after
+			// 	content 'Click to buy'
+			// 	font-family 'Gotham Book'
+			// 	font-weigth bold
+			// 	line-height 38px
+			// 	background-color: rgba(0,0,0,0.8)
+			// 	border-radius 4px
+			// 	color #FFF
+			// 	width 118px
+			// 	height 38px
+			// 	position absolute
+			// 	margin auto
+			// 	top 122px
+			// 	left 0
+			// 	right 0
+			// 	font-size 0.7rem
+			// 	text-transform none
+			// 	display none
+				
+			// 	@media (min-width 1280px)
+			// 		top 150px
+			
+			// &.book:hover
+				
+			// 	&:after
+			// 		display block
+				
+			
 		
-		img 
-			margin 1.5rem auto
-			width auto
-			height 216px	
-			display: inline-block; /* styles for centering vertically*/
-			vertical-align: middle; /* styles for centering vertically*/
-			
-			
-			@media (min-width:641px) and (max-width: 768px)
-				height 310px
-			@media (min-width:769px) and (max-width: 960px)
-				height 246px
-			@media (min-width:1024px) and (max-width: 1279px)
-				height 268px
-			@media (min-width: 1280px) and (max-width: 1919px)
-				height 244px
-			@media (min-width: 1920px)
-				height 324px
+			img
+				display block
+				height 175px
+				width auto
+				margin 0
+				visibility hidden
+		
+				@media (max-width 639px)
+					height 265px
+				@media (min-width:641px) and (max-width 767px)
+					height 245px
+				@media (min-width: 768px)
+					height 295px
+				@media (min-width:769px) and (max-width: 959px)
+					height 285px
+				@media (min-width:960px) and (max-width: 1023px)
+					height 213px
+				@media (min-width:1024px) and (max-width: 1279px)
+					height 235px
+				@media (min-width: 1280px)
+					height 270px
 				
 		.featured
 			color #FFF;
 			text-transform uppercase
 			font-size 1.5em
 			width 100%
-			padding 1.215em
+			padding 0.71em 1.215em
+			position relative
 			
 			img
-				margin 1em auto
+				margin 0 auto
 				display block
 				height 395px
+				width auto
+				left 0
+				right 0
 				
+				@media (min-width: 960px)
+					height 472px
 				@media (min-width: 1024px)
-					height 443px
+					height 469px
 				@media (min-width: 1280px)
-					height 395px
+					height 548px
+			
+			.text 
+				position absolute
+				bottom 40px
+				left 0
+				right 0
+				margin 0
 			
 			.author
 				font-size 0.5em
 				display block
+				line-height 1
 			
 			@media (min-width: 1024px)
 				font-size 2em
@@ -123,6 +226,7 @@
 			color #FFF
 			text-transform uppercase
 			display table
+			height 294px
 			
 			.vaWrapper
 				display table-cell
@@ -135,12 +239,31 @@
 					display block
 					width 254px
 					margin 0 auto
-				
+			
 			@media (max-width: 450px)
 				font-size 0.8em
+
+			@media (max-width 639px)
+				height 360px
+			
+			@media (min-width 641px)
+				height 340px
+
+			@media (min-width 768px)
+				height 384px
 				
-			@media (min-width: 1024px)
+			@media (min-width 960px)
+				height 320px
+
+			@media (min-width 1024px)
+				height 342px
 				font-size 1.2em
+			
+			@media (min-width 1025px)
+				height 340px
+			
+			@media (min-width 1280px)
+				height 383px
 				
 			b 
 				font-size 2.3em
@@ -179,6 +302,10 @@
 			@media (min-width:320px) and (max-width: 639px)
 				height 300px
 			
+			@media (min-width: 768px)
+				min-height 294px
+				
+			
 			.vaWrapper
 				display inline-block
 				width 99%
@@ -214,28 +341,59 @@
 				ul
 					margin 0
 					width 100%
-					padding 1em 1em
+					padding 0 .8em
+					
 				
 				li 
 					height auto
-					padding .5em .7em
+					padding 0 .7em
+					left 0
+					right 0
+					position relative
+					margin 0
+					padding-bottom 30%
 					
 					@media (min-width:320px) and (max-width: 639px)
 						width 33% !important
-					
+
 					a 
-						text-align right
+						position absolute
+						margin 0
+						top 0
+						bottom 0
+						left 0
+						right 0
+						text-align center
+						
+						&:before 
+							content: '';
+							display: inline-block;
+							height: 100%;
+							vertical-align: middle;
+							margin-right: -0.25em; /* Adjusts for spacing */
+
 
 					img
-						margin 0
 						width 100%
+						max-width 65px
 						height auto
+						visibility visible
+						margin auto
+						display inline-block
+						vertical-align middle
+						text-align center
 		
 		.newsletter
 			background-color #F4F4F4
 			color #010101
 			text-align left
 			padding 1em
+			
+			@media (min-width: 768px)
+				min-height 358px
+			
+			@media (min-width: 960px)
+				min-height 295px
 			
 			@media (min-width: 1025px){
 				min-height 292px
@@ -284,7 +442,9 @@
 			
 #paginationWrapper
 	@media (min-width 1025px)
-		margin-right 1.2em			
+		margin-right 1.2em
+	@media (min-width 1281px)
+		margin-right 0			
 .paginationWrapper
 	
 	.pagination

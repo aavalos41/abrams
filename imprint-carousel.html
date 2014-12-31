@@ -7,8 +7,6 @@
 		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/foundation.css" rel="stylesheet" type="text/css" />
         <link href="css/general-styles.css" rel="stylesheet" type="text/css" />
-        <link href="css/home.css" rel="stylesheet" type="text/css
-        " />
         <link href="css/results-template.css" rel="stylesheet" type="text/css" />
         <link href="css/imprint.css" rel="stylesheet" type="text/css
         " />
@@ -31,17 +29,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
-                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
-                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
-                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
-                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
-                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
-                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
-                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
-                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
-                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
-                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
+                <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
+                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
+                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
+                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
+                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
+                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
+                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
+                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
+                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
+                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
+                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -312,14 +310,16 @@
 		<!-- SIDEBAR END -->
 		<!-- CONTENT START -->
 		<div id="content">
-			<h1 class="graphicBar orange imprint ir">Abrams ComicArts</h1>
+            
 		<!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
          <div id="slider" class="full" style="height: 600px; 
     width: 1110px;">
             <!-- Slides Container -->
             <div u="slides" class="slides" style="width: 1110px; height: 600px;">
-                <div class="item"><img u="image" src="images/home/NYC_image.jpg" /><div class="caption">New York Air by George Steinmetz</div></div>
+                <div class="item">
+                    <h1 class="overSlider">ComicArts</h1>
+                    <img u="image" src="images/home/NYC_image.jpg" /><div class="caption">New York Air by George Steinmetz</div></div>
                 <div class="item"><img u="image" src="images/home/sinatra.jpg" /><div class="caption">Sinatra: The Classic Photographs</div></div>
                 <div class="item"><img u="image" src="images/home/astronaut.jpg" />
 
@@ -356,54 +356,47 @@
         <!-- Jssor Slider End -->				
         <div class="row">
                 <!-- START RESULTS -->
-                <div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end" id="results">
+                <div class="small-11 small-centered medium-12 columns end" id="results">
 
                     
                     <!--The following row will be shown only up to 1279px) -->
-                    <div class="row hide-for-large-up" data-equalizer>
-                        <!--This box will be shown only in from 1024px to 1279px) -->
-                        <div class="small-6 medium-4 show-for-large-only columns"  data-equalizer-watch> 
-                            <a href="#" class="book">
-                                <img src="images/category/fpo-cat-thumb-2.jpg" alt="" />
+                    <div class="row">
+                        <div class="small-6 medium-4 columns show-for-960-up" >
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-1.jpg)"/><img src="images/category/fpo-cat-thumb-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns show-for-960-up"  data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/category/fpo-cat-thumb-1.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="small-6 medium-4 columns hide-for-large-up"  data-equalizer-watch>
-                            <div class="note orange vaWrapper">
-                                <div class="vaElement">
-                                    <p>Abrams Image publishes illustrated books and gifts for savvy readers of all ages who shared a discerning sensibility.</p>
+                        <div class="small-6 medium-4 columns" >
+                            <div class="note orange logo">
+                                <img src="images/imprint/abrams-comicarts.png" alt="" />
+                                <div class="vaWrapper">
+                                    <p class="vaElement">Abrams Image publishes illustrated books and gifts for savvy readers of all ages who shared a discerning sensibility.</p>
                                     
                                 </div>
                             </div>
                         </div>
-                        <div class="small-6 medium-4 columns"  data-equalizer-watch>
-                            <div class="socialIcons vaWrapper">
-                                <ul class="small-block-grid-3 vaElement">
-                                    <li><a href="#"><img src="images/social-icons/orange/fb.png" alt="Facebook" /></a></li>
-                                    <li><a href="#"><img src="images/social-icons/orange/tw.png" alt="Twitter" /></a></li>
-                                    <li><a href="#"><img src="images/social-icons/orange/pin.png" alt="Pinterest" /></a></li>
-                                    <li><a href="#"><img src="images/social-icons/orange/ins.png" alt="Instagram" /></a></li>
-                                    <li><a href="#"><img src="images/social-icons/orange/tum.png" alt="Tumblr" /></a></li>
-                                    <li><a href="#"><img src="images/social-icons/orange/goo.png" alt="Google Plus" /></a></li>
-                                    <li><a href="#"><img src="images/social-icons/orange/gr.png" alt="" /></a></li>
-                                    
-                                </ul>
+                        <div class="small-6 medium-4 columns sort" >
+                            <div class="orange vaWrapper">
+                                <div class="vaElement sort">
+                                    <a href="#"> 
+                                    <b>sort</b><span> newest first</span>
+                                </a>
+
+                                </div>
                                 
                             </div>
                         </div>
                     </div><!-- End of .row .hide-for-large-up -->
                     <!--The following row will be shown only up to 1279px) -->
-                    <div class="row  hide-for-large-up" data-equalizer>
-                        <div class="small-6 medium-4 columns show-for-960-up"  data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/category/fpo-cat-thumb-2.jpg" alt="" />
-                            </a>
+                    <div class="row">
+                        <div class="small-6 medium-4 columns show-for-960-up" >
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-2.jpg)"/><img src="images/category/fpo-cat-thumb-2.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
                         </div>
-                        <div class="small-6 medium-4 columns vaWrapper"  data-equalizer-watch>
+                        <div class="small-6 medium-4 columns vaWrapper" >
                             <div class="newsletter vaElement">
                                 <h5>Newsletter</h5>
                                 <p>Sign up for the Abrams</br> Image Newsletter</p>
@@ -412,57 +405,7 @@
                                 <a href="#">See All Our Newsletters ›</a>
                             </div>
                         </div>
-                        <div class="small-6 medium-4 columns sort"  data-equalizer-watch>
-                            <div class="orange vaWrapper">
-                                <div class="vaElement sort">
-                                    <a href="#"> 
-                                    <b>sort</b><span> newest first</span>
-                                </a>
-
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                    </div><!-- End of .row .hide-for-large-up -->
-                    <!--The following row will be shown only from to 1280px) -->
-                    <div class="row  show-for-large-up" data-equalizer>
-                        <div class="small-6 medium-4 columns show-for-960-up"  data-equalizer-watch>
-                            <a href="#" class="book vaWrapper">
-                                <img src="images/category/fpo-cat-thumb-1.jpg" alt=""  class="vaElement" />
-                            </a>
-                        </div>
-                        <div class="small-6 medium-4 columns show-for-960-up"  data-equalizer-watch>
-                            <a href="#" class="book vaWrapper">
-                                <img src="images/category/fpo-cat-thumb-2.jpg" alt=""  class="vaElement" />
-                            </a>
-                        </div>
-                        <div class="small-6 medium-4 columns sort"  data-equalizer-watch>
-                            <div class="orange vaWrapper">
-                                <div class="vaElement sort">
-                                    <p class="">Abrams Image publishes illustrated books and gifts for savvy readers of all ages who shared a discerning sensibility.</p>
-                                    <a href="#"> 
-                                    <b>sort</b><span> newest first</span>
-                                </a>
-
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div> <!-- end of .row .show-for-large-up -->
-                    <!--The following row will be shown only from to 1280px) -->
-                     <div class="row  show-for-large-up" data-equalizer>
-                        <div class="small-6 medium-4 columns show-for-960-up"  data-equalizer-watch>
-                            <a href="#" class="book vaWrapper">
-                                <img src="images/category/fpo-cat-thumb-3.jpg" alt="" class="vaElement" />
-                            </a>
-                        </div>
-                        <div class="small-6 medium-4 columns show-for-960-up"  data-equalizer-watch>
-                            <a href="#" class="book vaWrapper">
-                                <img src="images/category/fpo-cat-thumb-4.jpg" alt=""  class="vaElement"/>
-                            </a>
-                        </div>
-                        <div class="small-6 medium-4 columns"  data-equalizer-watch>
+                         <div class="small-6 medium-4 columns" >
                             <div class="socialIcons vaWrapper">
                                 <ul class="small-block-grid-3 vaElement">
                                     <li><a href="#"><img src="images/social-icons/orange/fb.png" alt="Facebook" /></a></li>
@@ -476,57 +419,98 @@
                                 </ul>
                                 
                             </div>
-                        </div><!-- end of .row .show-for-large-up -->
+                        </div>
+                       
                         
-                    </div> <!-- end of .row -->
+                    </div><!-- End of .row -->
+                   
                     <div class="row">
                         <div class="small-12 medium-8 columns" >
-                            <div class="orange featured"  >
-                                <a href="#" class="book">
-                                    <img src="images/category/fpo-cat-feature-1.jpg" alt="" />Fashionable Selby <span class="author">By Todd Selby, foreword by Simon Doonan</span>
-                                </a>    
-                            </div>
-                        </div>
-                        <div class="columns small-12 medium-4 no-padding"  data-equalizer>
-                            <!--The following box will be shown up to 1023px) -->
-                            <div class="small-6 medium-12 columns hide-for-large-up" data-equalizer-watch>
+                            <div class="orange featured">
                                 <a href="#" class="book vaWrapper">
-                                    <img src="images/category/fpo-cat-thumb-3.jpg" alt=""  class="vaElement" />
+                                    <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-feature-1.jpg)"/><img src="images/category/fpo-cat-feature-1.jpg" alt=""/>
+                                    <div class="satinTexture"></div></div>
+                                    <div class="text">Fashionable Selby <span class="author">By Todd Selby, foreword by Simon Doonan</span></div>
                                 </a>
-                             </div><!-- End of .show-for-large-up --> 
-                             <!--The following box will be shown from 1024px) -->
-                             <div class="large-12 columns vaWrapper show-for-large-up no-padding-right"  data-equalizer-watch>
-                                <div class="newsletter vaElement">
-                                    <h5>Newsletter</h5>
-                                    <p>Sign up for the Abrams</br> Image Newsletter</p>
-                                    <label for="email">Your Email Address:</label>
-                                    <input type="email" />
-                                    <a href="#">See All Our Newsletters ›</a>
-                                </div>
-                            </div>  <!-- End of .show-for-large-up --> 
-                            <div class="small-6 medium-12 columns" data-equalizer-watch>
+
+                               
+                            </div>
+                            
+                        </div>
+                        <div class="columns small-12 medium-4 no-padding" >
+                            <div class="small-6 medium-12 columns">
                                 <a href="#" class="book vaWrapper">
-                                    <img src="images/category/fpo-cat-thumb-4.jpg" alt=""  class="vaElement" />
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-3.jpg)"/><img src="images/category/fpo-cat-thumb-3.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                             </div>
+                            <div class="small-6 medium-12 columns">
+                                <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-4.jpg)"/><img src="images/category/fpo-cat-thumb-4.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                                 </a>
                             </div>
                         </div>
                     </div><!-- end of .row -->
                     <ul class="small-block-grid-2 medium-block-grid-3">
                         
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-5.jpg" alt="" class="vaElement"/></a></li>
+                        <li><a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-5.jpg)"/><img src="images/category/fpo-cat-thumb-5.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a></li>
                        
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-6.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-7.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-1.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-2.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-3.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-4.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-5.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-6.jpg" alt="" class="vaElement"/></a></li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-6.jpg)"/><img src="images/category/fpo-cat-thumb-6.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-7.jpg)"/><img src="images/category/fpo-cat-thumb-7.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-1.jpg)"/><img src="images/category/fpo-cat-thumb-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-2.jpg)"/><img src="images/category/fpo-cat-thumb-2.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-3.jpg)"/><img src="images/category/fpo-cat-thumb-3.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-4.jpg)"/><img src="images/category/fpo-cat-thumb-4.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-5.jpg)"/><img src="images/category/fpo-cat-thumb-5.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-6.jpg)"/><img src="images/category/fpo-cat-thumb-6.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
                     </ul>
 
                 </div> <!-- END #RESULTS -->
-                <div id="paginationWrapper" class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end orange
+                <div id="paginationWrapper" class="small-11 small-centered medium-12 columns end orange
 ">
                     <div class="paginationWrapper row">
                         <div class="small-12 large-6 columns">

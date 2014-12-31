@@ -28,17 +28,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
-                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
-                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
-                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
-                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
-                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
-                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
-                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
-                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
-                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
-                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
+               <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
+                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
+                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
+                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
+                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
+                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
+                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
+                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
+                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
+                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
+                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -309,12 +309,12 @@
         <!-- SIDEBAR END -->
         <!-- CONTENT START -->
         <div id="content">
-			<h1 class="lightblue">Authors</h1>
+			<h1 class="red">Authors</h1>
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end author">
-					<div class="row darkbeige" data-equalizer>
+				<div class="small-11 small-centered medium-12 columns end author">
+					<div class="row darkbeige">
 						<div class="small-12 xlarge-12 columns end text">
-							<img src="images/author/fpo-author-photo.jpg" alt="" class="authorPhoto show-for-large-up" data-equalizer-watch/>
+							<img src="images/author/fpo-author-photo.jpg" alt="" class="authorPhoto show-for-large-up"/>
 							<h2>Lauren Myracle </h2>
 							<p>Lauren Myracle is a graduate of the Vermont College MFA program in writing for children and young adults. She is the author of the New York Times best-selling Internet Girls series (ttyl, ttfn, and l8r, g8r) and Rhymes with Witches, among many other books for teenagers and young people. She grew up in Atlanta and currently resides in Fort Collins, Colorado, with her husband and their three young children.</p>
 						</div>
@@ -322,23 +322,24 @@
 				</div>
 			</div>
 			<div class="row">
-                <div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end" id="results" >
+                <div class="small-11 small-centered medium-12 columns end" id="results" >
                 	<!-- The following row will show in small screens only -->
-                	<div class="row authorBoxesWrapper show-for-small-only" data-equalizer>
-                		<div class="small-6 medium-4 columns authorBoxes hide-for-960-up" data-equalizer-watch>
-                            <img src="images/author/fpo-author-photo.jpg" alt="" class="authorPhoto"/>
-                            </a>
+                	<div class="row authorBoxesWrapper show-for-small-only">
+                		<div class="small-6 medium-4 columns authorBoxes hide-for-960-up">
+                            <div class="authorPhoto">
+                            <img src="images/author/fpo-author-photo.jpg" alt="" />
+                            </div>
                         </div>
-                        <div class="small-6 medium-4 columns end  authorBoxes" data-equalizer-watch>
+                        <div class="small-6 medium-4 columns end  authorBoxes">
                             <div class="socialIcons vaWrapper">
                             	<ul class="small-block-grid-3 vaElement">
- 									<li><a href="#"><img src="images/social-icons/lightblue/fb.png" alt="Facebook" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/tw.png" alt="Twitter" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/pin.png" alt="Pinterest" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/ins.png" alt="Instagram" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/tum.png" alt="Tumblr" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/goo.png" alt="Google Plus" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/gr.png" alt="" /></a></li>
+ 									<li><a href="#"><img src="images/social-icons/red/fb.png" alt="Facebook" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/tw.png" alt="Twitter" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/pin.png" alt="Pinterest" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/ins.png" alt="Instagram" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/tum.png" alt="Tumblr" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/goo.png" alt="Google Plus" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/gr.png" alt="" /></a></li>
                                 	
  								</ul>
                                 
@@ -347,25 +348,27 @@
                     </div> <!-- end of .show-for-small-only-->
                     <!-- The following row will show in medium screens only -->
                     <div class="row authorBoxesWrapper show-for-medium-only"data-equalizer>
-                		<div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <img src="images/author/fpo-author-photo.jpg" alt="" class="authorPhoto"/>
+                		<div class="small-6 medium-4 columns authorBoxes">
+                            <div class="authorPhoto">
+                            <img src="images/author/fpo-author-photo.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="small-6 medium-4 columns authorBoxes show-for-960-up">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-1.jpg)"/><img src="images/author/fpo-cover-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes show-for-960-up" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-1.jpg" alt="" class="prettyCovers"/>
-                            </a>
-                        </div>
-                        <div class="small-6 medium-4 columns end  authorBoxes" data-equalizer-watch>
+                        <div class="small-6 medium-4 columns end  authorBoxes">
                             <div class="socialIcons vaWrapper">
                             	<ul class="small-block-grid-3 vaElement">
- 									<li><a href="#"><img src="images/social-icons/lightblue/fb.png" alt="Facebook" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/tw.png" alt="Twitter" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/pin.png" alt="Pinterest" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/ins.png" alt="Instagram" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/tum.png" alt="Tumblr" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/goo.png" alt="Google Plus" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/gr.png" alt="" /></a></li>
+ 									<li><a href="#"><img src="images/social-icons/red/fb.png" alt="Facebook" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/tw.png" alt="Twitter" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/pin.png" alt="Pinterest" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/ins.png" alt="Instagram" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/tum.png" alt="Tumblr" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/goo.png" alt="Google Plus" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/gr.png" alt="" /></a></li>
                                 	
  								</ul>
                                 
@@ -374,26 +377,28 @@
                     </div><!-- end of .show-for-medium-only-->
                     <!-- The following row will show only in large screens -->
                     <div class="row authorBoxesWrapper show-for-large-up"data-equalizer>
-                        <div class="small-6 medium-4 columns authorBoxes show-for-960-up" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-1.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes show-for-960-up">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-1.jpg)"/><img src="images/author/fpo-cover-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes show-for-960-up" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-2.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes show-for-960-up">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-2.jpg)"/><img src="images/author/fpo-cover-2.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns end  authorBoxes" data-equalizer-watch>
+                        <div class="small-6 medium-4 columns end  authorBoxes">
                             <div class="socialIcons vaWrapper">
                             	<ul class="small-block-grid-3 vaElement">
- 									<li><a href="#"><img src="images/social-icons/lightblue/fb.png" alt="Facebook" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/tw.png" alt="Twitter" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/pin.png" alt="Pinterest" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/ins.png" alt="Instagram" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/tum.png" alt="Tumblr" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/goo.png" alt="Google Plus" /></a></li>
-                                	<li><a href="#"><img src="images/social-icons/lightblue/gr.png" alt="" /></a></li>
+ 									<li><a href="#"><img src="images/social-icons/red/fb.png" alt="Facebook" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/tw.png" alt="Twitter" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/pin.png" alt="Pinterest" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/ins.png" alt="Instagram" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/tum.png" alt="Tumblr" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/goo.png" alt="Google Plus" /></a></li>
+                                	<li><a href="#"><img src="images/social-icons/red/gr.png" alt="" /></a></li>
                                 	
  								</ul>
                                 
@@ -401,39 +406,46 @@
                         </div>
                     </div><!-- end of .show-for-large-up -->
                     <div class="row">
-                    	<div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-1.jpg" alt="" class="prettyCovers"/>
+                    	<div class="small-6 medium-4 columns authorBoxes">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-1.jpg)"/><img src="images/author/fpo-cover-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-2.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes">
+                           <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-2.jpg)"/><img src="images/author/fpo-cover-2.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-3.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-3.jpg)"/><img src="images/author/fpo-cover-3.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-4.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-4.jpg)"/><img src="images/author/fpo-cover-4.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-5.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-5.jpg)"/><img src="images/author/fpo-cover-5.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-6.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns authorBoxes">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-6.jpg)"/><img src="images/author/fpo-cover-6.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns end authorBoxes" data-equalizer-watch>
-                            <a href="#" class="book">
-                                <img src="images/author/fpo-cover-7.jpg" alt="" class="prettyCovers"/>
+                        <div class="small-6 medium-4 columns end authorBoxes">
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/author/fpo-cover-7.jpg)"/><img src="images/author/fpo-cover-7.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
                     </div>
@@ -441,7 +453,7 @@
             </div>    
 			<!-- Highlight Boxes -->
 			<div class="row">
-                <div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end highlightBoxes">
+                <div class="small-11 small-centered medium-12 columns end highlightBoxes">
                     <ul class="small-block-grid-3">
                         <li>
                         <div class="darkbeige share vaWrapper">
@@ -461,7 +473,10 @@
                             <div class="darkbeige mayLike vaWrapper">
                                 <div class="vaElement">
                                     <span>You may also like</span>
-                                    <img class="prettyCovers" src="images/book/cover-dreamworks.jpg" alt="" />
+                                    <a href="#" class="book">
+                                        <div class="prettyCovers" style="background-image:url(images/book/cover-dreamworks.jpg)"/><img src="images/book/cover-dreamworks.jpg" alt=""/>
+                                        <div class="satinTexture"></div></div>
+                                    </a>
                                 </div>
                             </div>
                         </li>

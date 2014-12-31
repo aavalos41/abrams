@@ -26,17 +26,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
-                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
-                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
-                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
-                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
-                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
-                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
-                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
-                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
-                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
-                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
+                <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
+                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
+                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
+                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
+                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
+                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
+                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
+                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
+                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
+                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
+                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -309,7 +309,7 @@
         <div id="content">
 			<h1 class="pink">Events</h1>
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end events">
+				<div class="small-11 small-centered medium-12 columns end events">
 					<div class="mainEvent darkbeige">
 						<h2>Thursday, October 23</h2>
 						<ul>
@@ -390,7 +390,7 @@
 			</div>
 			<!-- Highlight Boxes -->
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end">
+				<div class="small-11 small-centered medium-12 columns end">
 					<div class="row highlightBoxes">
 						<div class="columns small-4">
 							<div class="darkbeige share vaWrapper">
@@ -410,11 +410,14 @@
 						</div>
 						<div class="columns small-4">
 							<div class="darkbeige mayLike vaWrapper">
-								<div class="vaElement">
-									<span>You may also like</span>
-									<img class="prettyCovers" src="images/book/cover-dreamworks.jpg" alt="" />
-								</div>
-							</div>
+                                <div class="vaElement">
+                                    <span>You may also like</span>
+                                    <a href="#" class="book">
+                                        <div class="prettyCovers" style="background-image:url(images/book/cover-dreamworks.jpg)"/><img src="images/book/cover-dreamworks.jpg" alt=""/>
+                                        <div class="satinTexture"></div></div>
+                                    </a>
+                                </div>
+                            </div>
 						</div>
 
 					</div><!--end of .row-->

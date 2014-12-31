@@ -30,17 +30,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
-                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
-                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
-                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
-                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
-                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
-                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
-                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
-                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
-                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
-                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
+                <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
+                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
+                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
+                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
+                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
+                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
+                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
+                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
+                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
+                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
+                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -325,7 +325,7 @@
             </div><!--End of slider-->
             <div class="row" data-equalizer>
             	<!--Book's Main Info-->
-            	<div class="small-11 small-centered medium-uncentered medium-6 xlarge-5 columns">
+            	<div class="small-11 small-centered medium-uncentered medium-6 columns">
 					<div class="bookMainInfo darkorange" data-equalizer-watch>
 	            		<div class="title">Danny Clinch</div>
 	            		<div class="subTitle">Still Moving</div>
@@ -336,7 +336,7 @@
             		</div><!--End of Book's Main Info-->
             	</div>
             	<!--Book's Details-->
-            	<div class="small-11 small-centered medium-uncentered medium-6 xlarge-5 columns end" >
+            	<div class="small-11 small-centered medium-uncentered medium-6 columns end" >
             		<div class="bookDetails darkbeige" data-equalizer-watch >
 	            		<ul>
 	            			<li><strong>Imprint: </strong>Abrams Books</li>
@@ -354,27 +354,27 @@
             	</div><!--end of .columns-->
             </div><!--end of .row-->
             <div class="row description">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end text">
+				<div class="small-11 small-centered medium-12 columns end text">
 					<p>Wes Anderson is one of the most influential voices from the past two decades of American cinema. A true auteur, Anderson is known for the visual artistry, inimitable tone, and idiosyncratic characterizations that make each of his films—Bottle Rocket, Rushmore, The Royal Tenenbaums, The Life Aquatic with Steve Zissou, The Darjeeling Limited, Fantastic Mr. Fox, and Moonrise Kingdom—instantly recognizable as “Andersonian.” The Wes Anderson Collection is the first in-depth overview of Anderson’s filmography, guiding readers through his life and career. Previously unpublished photos, artwork, and ephemera complement a book-length conversation between Anderson and award-winning critic Matt Zoller Seitz. The interview and images are woven together in a meticulously designed book that captures the spirit of his films.</p>
 				</div><!--end of .columns-->
 			</div><!--end of .row-->
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end">
-					<div class="row">
+				<div class="small-11 small-centered medium-12 columns end">
+					<div class="row photos">
 						<div class="columns small-12 medium-4 small-centered medium-uncentered">
 							<img src="images/book/product-pic1.jpg" alt="" />
 						</div>
 						<div class="columns small-12 medium-4 small-centered medium-uncentered">
 							<img src="images/book/product-pic2.jpg" alt="" />
 						</div>
-						<div class="columns small-12 medium-4 small-centered medium-uncentered">
+						<div class="columns small-12 medium-4 small-centered medium-uncentered end">
 							<img src="images/book/product-pic3.jpg" alt="" />
 						</div>
 					</div><!--end of .row-->
 				</div><!--end of .columns-->
 			</div><!--end of .row-->
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end text">
+				<div class="small-11 small-centered medium-12 columns end text">
 					<h2>Praise</h2>
 					<blockquote>“In The Wes Anderson Collection, Seitz expands a series of video essays on Anderson’s influences, illuminating as much of Anderson’s process as possible in a massive, beautifully rendered volume. Although it looks (and sometimes reads) like a coffee table book, The Wes Anderson Collection brings together style and substance to provide a loving homage to Anderson’s films and moviemaking in general.” 
 						<cite>—The A.V. Club </cite>
@@ -392,33 +392,35 @@
 			</div><!--end of .row-->
         
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end">
-					<div class="row highlightBoxes">
-						<div class="columns small-4">
-							<div class="darkbeige share vaWrapper">
-								<div class="vaElement wrapper">
-									<span>share</span>
-									<div class="shareWidgets"><a href="#" class="fb"></a></div>
+                <div class="small-11 small-centered medium-12 columns end highlightBoxes">
+                    <ul class="small-block-grid-3">
+                        <li>
+                        <div class="darkbeige share vaWrapper">
+                            <div class="wrapper vaElement">
+                                <span>share</span>
+                                <div class="shareWidgets"><a href="#" class="fb"></a></div>
                                 <div class="shareWidgets"><a href="#" class="tw"></a></div>
                                 <div class="shareWidgets"><a href="#" class="in"></a></div>
                                 <div class="shareWidgets"><a href="#" class="go"></a></div>
-								</div>
-							</div>
-						</div>
-						<div class="columns small-4">
-							<div class="darkorange more vaWrapper">
-								<a href="#" class="vaElement"><span>More</span>Photography</a>
-							</div>
-						</div>
-						<div class="columns small-4">
-							<div class="darkbeige mayLike vaWrapper">
-								<div class="vaElement">
-									<span>You may also like</span>
-									<img class="prettyCovers" src="images/book/cover-dreamworks.jpg" alt="" />
-								</div>
-							</div>
-						</div>
-					</div><!--end of .row-->
+                            </div>
+                        </div></li>
+                        <li>
+                        <div class="darkorange more vaWrapper">
+                            <a href="#" class="vaElement"><span>More</span>photography</a>
+                        </div></li>
+                        <li>
+                            <div class="darkbeige mayLike vaWrapper">
+                                <div class="vaElement">
+                                    <span>You may also like</span>
+                                    <a href="#" class="book">
+                                        <div class="prettyCovers" style="background-image:url(images/book/cover-dreamworks.jpg)"/><img src="images/book/cover-dreamworks.jpg" alt=""/>
+                                        <div class="satinTexture"></div></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            <!--end of .row-->
 
 				</div><!--end of .columns-->
 			</div><!--end of .row-->

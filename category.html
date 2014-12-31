@@ -28,17 +28,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
-                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
-                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
-                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
-                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
-                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
-                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
-                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
-                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
-                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
-                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
+                <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
+                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
+                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
+                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
+                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
+                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
+                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
+                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
+                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
+                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
+                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -309,14 +309,15 @@
         <!-- SIDEBAR END -->
         <!-- CONTENT START -->
         <div id="content">
-            <h1 class="overSlider">Fashion</h1>
          <!-- Jssor Slider Begin -->
 	         <div id="slider" class="full" style="height: 600px; 
     width: 1110px;">
             <!-- Slides Container -->
             <div u="slides" class="slides" style="width: 1110px; height: 600px;">
                 
-                <div class="item"><img u="image" src="images/category/carousel1.jpg" /><div class="caption darkCaption">Image caption here</div></div>
+                <div class="item">
+                    <h1 class="overSlider">Fashion</h1>
+                    <img u="image" src="images/category/carousel1.jpg" /><div class="caption darkCaption">Image caption here</div></div>
             </div>
              <!-- Arrow Navigator Skin Begin
                     /* jssor slider bullet navigator skin 05 css */
@@ -345,9 +346,9 @@
 
 			<div class="row">
 				<!-- START RESULTS -->
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end" id="results">
+				<div class="small-11 small-centered medium-12 columns end" id="results">
                     <!--The following row will be shown only in mobile (up to 320px) -->
-                    <div class="row show-for-xsmall-only"  data-equalizer>
+                    <div class="row show-for-xsmall-only">
                         
                         <div class="small-6 medium-4 columns sort" >
                             <div class="pink vaWrapper">
@@ -356,26 +357,21 @@
                                 </a>
                             </div>
                         </div> 
-                        <div class="small-6 medium-4 columns sort hide-for-xsmall-only"  data-equalizer-watch>
-                            <div class="pink vaWrapper">
-                                <a href="#" class="sort vaElement"> 
-                                    <b>sort</b><span> newest first</span>
-                                </a>
-                            </div>
-                        </div>
                     </div><!-- End of .show-for-xsmall-only -->
-                    <div class="row"  data-equalizer>
-                        <div class="small-6 medium-4 columns"  data-equalizer-watch>
+                    <div class="row">
+                        <div class="small-6 medium-4 columns">
                             <a href="#" class="book vaWrapper">
-                                <img src="images/category/fpo-cat-thumb-1.jpg" alt="" class="vaElement"/>
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-1.jpg)"/><img src="images/category/fpo-cat-thumb-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 show-for-960-up columns"  data-equalizer-watch> <!--This box will be hidden from 321px to 959px -->
+                        <div class="small-6 medium-4 show-for-960-up columns"> <!--This box will be hidden from 321px to 959px -->
                             <a href="#" class="book vaWrapper">
-                                <img src="images/category/fpo-cat-thumb-2.jpg" alt="" class="vaElement"/>
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-2.jpg)"/><img src="images/category/fpo-cat-thumb-2.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                             </a>
                         </div>
-                        <div class="small-6 medium-4 columns sort hide-for-xsmall-only"  data-equalizer-watch>
+                        <div class="small-6 medium-4 columns sort hide-for-xsmall-only">
                             <div class="pink vaWrapper">
                                 <a href="#" class="sort vaElement"> 
                                     <b>sort</b><span> newest first</span>
@@ -385,41 +381,77 @@
                     </div> <!-- end of .row -->
                     <div class="row">
                         <div class="small-12 medium-8 columns" >
-                            <div class="pink featured"  >
+                            <div class="pink featured">
                                 <a href="#" class="book vaWrapper">
-                                    <img src="images/category/fpo-cat-feature-1.jpg" alt="" />Fashionable Selby <span class="author">By Todd Selby, foreword by Simon Doonan</span>
-                                </a>    
+                                    <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-feature-1.jpg)"/><img src="images/category/fpo-cat-feature-1.jpg" alt=""/>
+                                    <div class="satinTexture"></div></div>
+                                    <div class="text">Fashionable Selby <span class="author">By Todd Selby, foreword by Simon Doonan</span></div>
+                                </a>
+
+                               
                             </div>
                         </div>
-                        <div class="columns small-12 medium-4 no-padding"  data-equalizer>
-                            <div class="small-6 medium-12 columns" data-equalizer-watch>
+                        <div class="columns small-12 medium-4 no-padding">
+                            <div class="small-6 medium-12 columns">
                                 <a href="#" class="book vaWrapper">
-                                    <img src="images/category/fpo-cat-thumb-3.jpg" alt="" class="vaElement"/>
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-3.jpg)"/><img src="images/category/fpo-cat-thumb-3.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
                                 </a>
-                             </div>   
-                             <div class="small-6 medium-12 columns" data-equalizer-watch>
+                            </div>   
+                            <div class="small-6 medium-12 columns">
                                 <a href="#" class="book vaWrapper">
-                                    <img src="images/category/fpo-cat-thumb-4.jpg" alt="" class="vaElement"/></div>
+                                    <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-4.jpg)"/>
+                                        <img src="images/category/fpo-cat-thumb-4.jpg" alt=""/>
+                                        <div class="satinTexture"></div>
+                                    </div>
                                 </a>
+                            </div>
                         </div>
                     </div><!-- end of .row -->
-                              
-
-
-
 					<ul class="small-block-grid-2 medium-block-grid-3">
                         
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-5.jpg" alt="" class="vaElement"/></a></li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-5.jpg)"/><img src="images/category/fpo-cat-thumb-5.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+
+                        </li>
                        
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-6.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-7.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-1.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-2.jpg" alt="" class="vaElement"/></a></li>
-                        <li><a href="#" class="book vaWrapper"><img src="images/category/fpo-cat-thumb-3.jpg" alt="" class="vaElement"/></a></li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-6.jpg)"/><img src="images/category/fpo-cat-thumb-6.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-7.jpg)"/><img src="images/category/fpo-cat-thumb-7.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-1.jpg)"/><img src="images/category/fpo-cat-thumb-1.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-2.jpg)"/><img src="images/category/fpo-cat-thumb-2.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" class="book vaWrapper">
+                                <div class="prettyCovers" style="background-image:url(images/category/fpo-cat-thumb-3.jpg)"/><img src="images/category/fpo-cat-thumb-3.jpg" alt=""/>
+                                <div class="satinTexture"></div></div>
+                                </a>
+                        </li>
                     </ul>
 
 				</div> <!-- END #RESULTS -->
-                <div id="paginationWrapper" class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end pink">
+                <div id="paginationWrapper" class="small-11 small-centered medium-12 columns end pink">
                     <div class="paginationWrapper row">
                         <div class="small-12 large-6 columns">
                             <div class="displaying">Displaying 1 to 30</div>

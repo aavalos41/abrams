@@ -25,7 +25,7 @@
                     $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
                     $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
                     $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                    $Steps: 4                                       //[Optional] Steps to go for each navigation request, default value is 1
                 }
             };
 
@@ -47,7 +47,7 @@
             function ScaleSlider() {
                 var bodyWidth = $('#content').width();
                 if (bodyWidth)
-                    jssor_slider2.$ScaleWidth(Math.min(bodyWidth, 1100));
+                    jssor_slider2.$ScaleWidth(Math.min(bodyWidth, 1120));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }

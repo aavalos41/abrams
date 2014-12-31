@@ -31,14 +31,17 @@ $(document).ready(function() {
 	
 	//tap
 	var selectedMenu="";
+	var contentWidth=$('#content').width();
 	$('.baseMenuItem').click(function(){
 			if(selectedMenu!="")invertColor(selectedMenu+"MenuItem");
 		if(selectedMenu==$(this).closest('li').attr('id').substr(0,4)){
 			//close submenu
-			$('#subMenu').stop(true, true).animate({'width' : "0px" });
-			$('#content').stop(true, true).animate({'left' : "160px" });
+			if(contentWidth>1024) $('#content').animate({'width': "auto", queue:false});
+			$('#subMenu').stop(true, true).animate({'width' : "0px",queue:false });
+			$('#content').stop(true, true).animate({'left' : "160px" , queue:false});
 			selectedMenu="";
 		}else{
+			if(contentWidth>1024) $('#content').animate({'width': contentWidth, queue:false});
 			selectedMenu=$(this).closest('li').attr('id').substring(0,4);
 			//pause slider (if not paused before for mobile)
 			//reveal the submenu for the selected menu item
@@ -48,7 +51,7 @@ $(document).ready(function() {
 			invertColor($(this).closest('li').attr('id'));
 			//switch styles for selected elements
 			//expand submenu area
-			$('#subMenu').animate({'width' : "280px" });
+			$('#subMenu').animate({'width' : "280px" , queue:false});
 		
 			$('#content').stop(true, true).animate({'left' : "460px" });
 		}
@@ -102,8 +105,8 @@ $(document).ready(function() {
 					$('#baseMenu').stop(true, true).animate({'left' : "0px" });
 				}else if(clientWidth>1280){
 					$('#content').stop(true, true).animate({'left' : "160px" });
-					$('#baseMenu').css('left','50%').css('left','-=640px');
-					$('#subMenu').css('left','50%').css('left','-=480px');
+					$('#baseMenu').animate('left','50%').animate('left','-=640px');
+					$('#subMenu').animate('left','50%').animate('left','-=480px');
 				}else{
 					$('#content').stop(true, true).animate({'left' : "0px" });
 					$('#baseMenu').stop(true, true).animate({'left' : "-160px" });

@@ -85,9 +85,10 @@ h1 .tagline b {
 @media (min-width: 1025px) {
 	.columns, .column {
 		padding-left: 0px;
-		padding-right: 25px;
+		padding-right: 0px;
 }
 }
+
 h3, h2 {
 	font-weight: normal;
 }
@@ -187,7 +188,7 @@ h3, h2 {
 @media (min-width: 1024px) {
 	.singleImage .offHover,
 	.singleImage img {
-	height: 310px;
+	height: 320px;
 	}
 
 }
@@ -202,6 +203,7 @@ h3, h2 {
 
 .singleImageFull .offHover { /* For full width images */
 	height: auto;
+	overflow: hidden;
 }
 
 .imageRight{
@@ -228,16 +230,21 @@ h3, h2 {
 	width: auto;
 	overflow:hidden;
 	color:white;
-	padding:10px;
+	padding:20px;
 	height: 240px;
 }
 
 @media (min-width: 960px) {
 	.text {
 		height: 320px;
+		padding:30px;
 	}
 }
-
+@media (min-width: 1025px) {
+	.text {
+		padding:20px;
+	}
+}
 @media (min-width: 1280px) {
 	.text {
 		height: 360px;
@@ -246,10 +253,11 @@ h3, h2 {
 }
 @media (min-width: 1025px) {
 	.seller {
-		padding-right: 25px
+		padding-right: 25px !important;
 	}
 	.seller.end {
-		padding-right: 25px;
+		padding-left: 25px !important;
+		padding-right: 0px !important;
 	}
 }
 
@@ -289,7 +297,7 @@ h3, h2 {
 }
 .seller h5 {
 	font-size: 1.5em;
-	margin: 0 0 38px;
+	margin: 5px 0 38px;
 	letter-spacing: 2px;
 	font-family: 'Gotham Book';
 	font-weight: normal;
@@ -297,13 +305,13 @@ h3, h2 {
 @media (min-width: 641px) {
 	.seller h5 {
 	font-size: 0.75em;
-	margin: 0 0 5px;
+	margin: 5px 0;
 }
 }
 @media (min-width: 960px) {
 	.seller h5 {
 	font-size: 0.87em;
-	margin: 0 0 27px;
+	margin: 5px 0 27px;
 }
 }
 .seller img{	

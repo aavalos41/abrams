@@ -27,17 +27,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
-                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
-                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
-                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
-                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
-                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
-                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
-                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
-                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
-                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
-                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
+                <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
+                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
+                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
+                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
+                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
+                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
+                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
+                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
+                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
+                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
+                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -309,12 +309,12 @@
         <!-- CONTENT START -->
         <div id="content">
 			<div class="header row" data-equalizer>
-				<div class="medium-12 large-6 xlarge-5 columns"   >
+				<div class="medium-12 large-6 columns"   >
                     <div class="cover" data-equalizer-watch>
 					   <img src="images/book/cover-ensnared.jpg" alt="" class="prettyCovers" />
                     </div>
 				</div>
-				<div class="medium-12 large-6 xlarge-5 end column" data-equalizer-watch >
+				<div class="medium-12 large-6 columns bookModules" data-equalizer-watch >
 					<div class="row">
 						<!--Book's Main Info-->
 						<div class="small-11 small-centered medium-uncentered medium-6 large-12 columns">
@@ -349,7 +349,7 @@
 			</div><!--End of Row-->
 
             <div class="row description">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end text">
+				<div class="small-11 small-centered medium-12 columns end text">
 					<p>After surviving a disastrous battle at prom, Alyssa has embraced her madness and gained perspective. She’s determined to rescue her two worlds and the people and netherlings she loves. Even if it means challenging Queen Red to a final battle of wills and wiles . . . and even if the only way to Wonderland, now that the rabbit hole is closed, is through the looking-glass world—a parallel dimension filled with mutated and violent netherling outcasts.</p>
 					<p>
 In the final installment of the wildly popular Splintered trilogy, Alyssa and her dad journey into the heart of magic and mayhem in search of her mom and to set right all that’s gone wrong. Together with Jeb and Morpheus, they must salvage Wonderland from the decay and destruction that has ensnared it. But if they succeed and come out alive, can everyone truly have their happily ever after?</p>
@@ -358,7 +358,7 @@ In the final installment of the wildly popular Splintered trilogy, Alyssa and he
 			<!-- Highlight Boxes -->
 
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end">
+				<div class="small-11 small-centered medium-12 columns end">
 					<div class="row highlightBoxes" data-equalizer>
 						<div class="columns small-4">
 							<div class="darkbeige trailer vaWrapper">
@@ -393,7 +393,7 @@ In the final installment of the wildly popular Splintered trilogy, Alyssa and he
 				</div><!--end of .columns-->
 			</div><!--end of .row & Highlight Boxes -->
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end text">
+				<div class="small-11 small-centered medium-12 columns end text">
 					<h2>Praise</h2>
 					<blockquote>"Fans of dark fantasy, as well as of Carroll’s Alice in all her revisionings (especially Tim Burton’s), will find a lot to love in this compelling and imaginative novel."
 						<cite>—Bulletin of the Center for Children's Books</cite>
@@ -412,7 +412,7 @@ In the final installment of the wildly popular Splintered trilogy, Alyssa and he
 			</div><!--end of .row-->
         	<!-- Highlight Boxes -->
 			<div class="row">
-				<div class="small-11 small-centered medium-12 large-uncentered xlarge-10 columns end">
+				<div class="small-11 small-centered medium-12 columns end">
 					<div class="row highlightBoxes">
 						<div class="columns small-4">
 							<div class="darkbeige share vaWrapper">
@@ -432,11 +432,14 @@ In the final installment of the wildly popular Splintered trilogy, Alyssa and he
 						</div>
 						<div class="columns small-4">
 							<div class="olive mayLike vaWrapper">
-								<div class="vaElement">
-									<span>You may also like</span>
-									<img class="prettyCovers" src="images/book/cover-dreamworks.jpg" alt="" />
-								</div>
-							</div>
+                                <div class="vaElement">
+                                    <span>You may also like</span>
+                                    <a href="#" class="book">
+                                        <div class="prettyCovers" style="background-image:url(images/book/cover-dreamworks.jpg)"/><img src="images/book/cover-dreamworks.jpg" alt=""/>
+                                        <div class="satinTexture"></div></div>
+                                    </a>
+                                </div>
+                            </div>
 						</div>
 
 					</div><!--end of .row-->
