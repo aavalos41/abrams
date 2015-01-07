@@ -3,6 +3,28 @@
 
 $(document).ready(function() {
 	var baseMenuFlag=false; //variable to keep track if menu is open
+	var showingBuy='';
+	
+	var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
 	
 	//scroll
 	 $("#baseMenu").niceScroll({horizrailenabled:false,zindex:6});
@@ -77,6 +99,25 @@ $(document).ready(function() {
 			   function(){  
 				  $(this).find($( ".onHover" )).stop().fadeTo('slow', 0);  
 		 });  
+		 $("#buy").on('click', function () {
+			 
+			if( isMobile.any() ){
+				$("#buyOptions").css("opacity",0.8);
+        		$("#buyOptions").toggle();
+			}
+      	} 
+      	);
+		 $("#buy").on('mouseenter', function () {
+        		$("#buyOptions").css('display',"block");
+				showingBuy='enter';
+      		}
+      	);
+	  $("#buyOptions").on('mouseleave',
+      	function () {
+        	$("#buyOptions").stop().css('display',"none");
+			showingBuy='exit';
+     	 }
+      );
 		 
 		 function invertColor(id){
 			 var fontC=$('#'+id).css("color");
@@ -97,7 +138,6 @@ $(document).ready(function() {
 			function ScaleMenu() {
 				//var clientWidth=$(window).width();
 				var clientWidth=document.body.clientWidth;
-				console.log('window '+clientWidth);
 				closeAll()
 				if(clientWidth>1024&&clientWidth<=1280){
 					$('#content').stop(true, true).animate({'left' : "160px" });

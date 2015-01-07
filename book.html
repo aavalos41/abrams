@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<!-- Replace with WP title variable --><title>Abrams</title>
         <link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/foundation.css" rel="stylesheet" type="text/css" />
@@ -11,8 +12,8 @@
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery.nicescroll.js"></script>
         <!-- JSSOR slider used as placeholder - replace with WP-friendly sliders -->
-		<!--<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-		<script type="text/javascript" src="js/sliderSettings.js"></script>-->
+		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+		<script type="text/javascript" src="js/sliderSettings.js"></script>
 		<script src="js/vendor/modernizr.js"></script>
 		<script type="text/javascript" src="js/menuManager.js"></script>
 	</head>
@@ -311,28 +312,79 @@
         <!-- SIDEBAR END -->
         <!-- CONTENT START -->
         <div id="content">
-        	<div id="slider">
-	        		<div class="item">
-	            		<img class="prettyCovers" src="images/book/slider-danny-clinch.jpg" />
-	            	</div>
-	            	<div class="controls">
-	            		<div class="itemActive"></div>
-	            		<div class="itemUnactive"></div>
-	            		<div class="itemUnactive"></div>
-	            		<div class="itemUnactive"></div>
-	            	</div>
-	            	<div class="caption">New York Air by George Steinmetz</div>
-            </div><!--End of slider-->
-            <div class="row" data-equalizer>
+            <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+        <div id="slider" class="full" style="height: 600px; 
+    width: 1100px;">
+            <!-- Slides Container -->
+            <div u="slides" class="slides" style="width: 1100px; height: 600px;">
+                
+                <div class="item cover">
+                	<!-- use u="book" instead of u="image" when placing book covers book covers -->
+                    <img u="book" class="prettyCovers" src="images/book/slider-danny-clinch.jpg" />
+                    <div class="caption">New York Air by George Steinmetz</div>
+                </div>
+                
+            </div>
+             <!-- Arrow Navigator Skin Begin
+                    /* jssor slider bullet navigator skin 05 css */
+            
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+             -->
+          <!-- Arrow Left --> 
+          <span u="arrowleft" class="arrowLeft jssora03l"> </span> 
+          <!-- Arrow Right --> 
+          <span u="arrowright" class="arrowRight jssora03r"> </span> 
+          <!-- Arrow Navigator Skin End --> 
+          
+            <!-- bullet navigator container -->
+           <div u="navigator" class="navigator jssorb05" style="">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style=""></div>
+        </div>
+
+            <!-- Bullet Navigator Skin End -->
+          
+        </div>
+            <div class="row bookModules" data-equalizer>
             	<!--Book's Main Info-->
             	<div class="small-11 small-centered medium-uncentered medium-6 columns">
+                    <div id="buy"><a href="#">Buy</a>
+
+                    </div>
 					<div class="bookMainInfo darkorange" data-equalizer-watch>
 	            		<div class="title">Danny Clinch</div>
 	            		<div class="subTitle">Still Moving</div>
 	            		<div class="author">By Danny Clinch
 	            			<div class="subAuthor">Foreword by Bruce Spingsteen </div>
 	            		</div>
-	            		<div class="buy"><a href="#">Buy</a></div>
+                         <div id="buyOptions" class="darkbeige" data-equalizer-watch>
+                        <div class="hardcover">
+                            <h4>HARDCOVER</h4>
+                            <ul>
+                                <li><a href="#">Abrams Books</a></li>
+                                <li><a href="#">Amazon</a></li>
+                                <li><a href="#">Books-A-Million </a></li> 
+                                <li><a href="#">Barnes & Noble</a></li>
+                                <li><a href="#">IndieBound</a></li>
+                                <li><a href="#">Powells</a></li>
+                            </ul>
+                        </div>
+                        <div class="ebook">
+                            <h4>EBOOK</h4>
+                            <ul>
+                                <li><a href="#">Amazon</a></li>
+                                <li><a href="#">Barnes and Noble</a></li>
+                                <li><a href="#">iBookstore</a></li> 
+                                <li><a href="#">IndieBound</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
             		</div><!--End of Book's Main Info-->
             	</div>
             	<!--Book's Details-->

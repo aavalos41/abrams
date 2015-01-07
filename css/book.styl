@@ -1,29 +1,33 @@
 	
-.columns .cover
+#slider
 	background-color #f4f4f4
-	// background-color #ccc
-	padding 35px 0
-	text-align center
-	min-height 500px
 	
-	img
-		width 85%
-		height auto
-		margin auto
+	.cover
+		background-color #f4f4f4
+		text-align center
+		min-height 500px
 		
-		@media (min-width: 641px)
-			width 70%
-		
-		@media (min-width: 768px) and (max-width:1023px)
-			width 50%
+		img
+			height 550px
+			width auto
+			margin auto
+			bottom 0
+			top 0
 			
-		@media (min-width: 1025px)
-			width 85%
+			@media (min-width: 641px)
+				height 450px
+			
+			@media (min-width: 768px) and (max-width:1024px)
+				height 470px
+				top -30px
+				
+			@media (min-width: 1025px)
+				height 550px
 
 		
 
 
-.bookModules
+.columns.bookModules /* For no carousel template */
 	@media (min-width: 1025px)
 		padding-right 0
 
@@ -32,6 +36,8 @@
 			padding-right 0 !important
 			padding-left 0 !important
 
+
+
 .bookMainInfo
 	padding 15px
 	color #FFF
@@ -39,9 +45,10 @@
 	font-family: 'Gotham Light'
 	position relative
 	margin-top 2.4em
+	overflow hidden
 	
-	@media (max-width:320px)
-		min-height 22em
+	@media (max-width:640px)
+		min-height 15em
 		
 	@media (min-width:641px)
 		min-height 20em	
@@ -71,12 +78,18 @@
 		font-size 1.25em
 		letter-spacing 0.1em
 		position absolute
-		bottom 20px;
+		bottom 20px
 		width 75%
 		
 		@media (max-width:320px)
 			font-size 1.31em
-			bottom 50px;
+			bottom 50px
+			
+		@media (max-width: 639px)
+			position relative
+			bottom 0
+			margin-top 15px
+		
 			
 		@media (min-width:640px) and (max-width: 1024px)
 			font-size 1.1em
@@ -85,7 +98,83 @@
 		.subAuthor
 			font-size 0.85em
 			letter-spacing 0.1em
+			
+#buy
+	font-size 1.625em
+	line-height 1		
+	text-transform uppercase
+	margin-bottom 0px
+	position absolute
+	z-index 15
+	bottom 20px
+	right 34px
+	color #FFF	
+	
+#buyOptions
+	width 100%
+	padding 50px 0 0
+	color #FFF
+	min-height 27em
+	position absolute
+	top 0
+	bottom 0
+	left 0
+	right 0
+	opacity 0
+	display none
+
+	@media (max-width:640px)
+		padding-top 25px
 		
+	@media (min-width:960px)
+		padding-top 20%
+			
+	@media (min-width:1024px)
+		padding-top 25%
+
+	@media (min-width:1280px)
+		min-height 21.25em	
+		padding-top 100px
+		
+	.hardcover,
+	.ebook
+		width 50%
+		float left
+		text-align right
+		padding-left 20px
+		padding-right 20px
+		
+		@media (min-width:1280px)
+			padding-left 40px
+			padding-right 40px
+		
+		h4
+			font-family 'Gotham Book'
+			font-size 1.125em 
+			margin 0
+			font-weight bold
+			letter-spacing 3px
+			
+			@media (min-width: 640px) and (max-width: 768px)
+				font-size 1em
+				letter-spacing 1px
+		ul 	
+			padding 0
+			margin 0
+		
+		li 
+			font-family 'Gotham Light'
+			font-size 1.125em
+			list-style none
+			line-height 1
+			margin 7px 0 
+	
+	.ebook
+		@media (min-width 1025px)
+			padding-right 45px
+		@media (min-width 1280px)
+			padding-right 85px
+	
 	.buy
 		font-size 1.625em
 		line-height 1		
@@ -94,8 +183,11 @@
 		position absolute
 		bottom 20px
 		right 20px
+	
+
+				
 		
-.header .bookMainInfo,
+.header .bookMainInfo, /* For no carousel template */
 .header .bookDetails
 	margin-top 2.43em
 	min-height 350px
@@ -111,13 +203,13 @@
 	@media (min-width:1280px)
 		min-height 371px
 		
-.header .bookDetails
+.header .bookDetails /* For no carousel template */
 	@media (min-width: 1025px) {
 		margin-top 2.3em
 	}
 .bookDetails
 	color #FFF
-	padding 12px 15px
+	padding 6px 15px
 	margin-top 2.4em
 	
 	@media (max-width:320px)
@@ -140,7 +232,7 @@
 	
 	ul li 
 		list-style-type none
-		margin 0.61em 0
+		margin 11px 0
 		font-size 1.5em
 		line-height 1
 		
