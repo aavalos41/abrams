@@ -101,18 +101,35 @@ h3, h2 {
 	font-size: 0.875em;
 	line-height: 1;
 }
-.columns .widgetTitle{
+@media (max-width: 639px) {
+	.categoryTitle{
+		font-size:  0.6em;
+	}
+}
+.columns .widgetTitle {
 	margin: 0px;
 	font-size: 1.5em;
 	text-transform:none;
-	line-height: 1.4
+	line-height: 1.4;
 }
+@media (max-width: 639px) {
+	.columns .widgetTitle {
+		font-size: 1.1em;
+		line-height: 1.3;
+}
+	}
 .columns .widgetText{
 	line-height:1.4;
 	margin-bottom:0;
 	margin-top: 0px ;
 	font-size:1.5em;
 }
+@media (max-width: 639px) {
+	.columns .widgetText{
+		font-size: 0.95em;
+		line-height: 1.3;
+	}
+	}
 @media (min-width: 768px) {
 	.columns .widgetTitle{ 
 		font-size: 1.5em;
@@ -156,6 +173,11 @@ h3, h2 {
 	height:240px;
 	cursor:pointer;
 	position:relative;
+}
+@media (max-width: 640px) {
+	.offHover {
+		height: auto;
+	}
 }
 @media (min-width: 960px) {
 	.offHover {
@@ -209,12 +231,29 @@ h3, h2 {
 .imageRight{
 	float:right;
 }
+@media (max-width: 640px) {
+	.imageRight{
+	float:left;
+	width: 100%;
+}
+	.imageLeft{
+	width: 100%;
+}
+	}
 .imageLeft{
 	float:left;
 }
 .imageLeft img,
 .imageRight img{
 	height:240px;
+}
+@media (max-width: 640px) {
+	.imageLeft img,.imageRight img{
+		max-width: 620px;
+		width: 100%;
+		height: auto;
+		float: left;
+	}
 }
 @media (min-width: 960px) {
 	.imageLeft img,.imageRight img{
@@ -233,7 +272,12 @@ h3, h2 {
 	padding:20px;
 	height: 240px;
 }
-
+@media (max-width: 640px) {
+	.text {
+		padding:15px;
+		height: auto
+	}
+}
 @media (min-width: 960px) {
 	.text {
 		height: 320px;
@@ -362,7 +406,11 @@ h3, h2 {
 	color:white;
 	display:none;
 }
-
+@media (max-width: 639px) {
+	.onHover {
+		font-size: 75%;
+	}
+}
 .onHover h2{
 	text-transform:uppercase;
 	font-size: 2.5em;
